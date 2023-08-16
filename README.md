@@ -11,5 +11,6 @@
    <li>Harish : Navbar & Footer</li>
    <li>snehal : news</li>
    <li>simran : sport</li>
+   <li>Rahul : web series</li>
 </ul>
 
