@@ -26,3 +26,12 @@
     border-radius: 3px;
 
 }
+.rounding{
+    border-radius: 20px;
+}
+@media screen and (max-width: 500px) {
+    .mq{
+        margin-left: 50px;
+    }
+    
+}
