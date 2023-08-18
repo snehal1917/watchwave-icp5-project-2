@@ -14,6 +14,56 @@
 
 <body class="text-light">
     <div class="container-fluid">
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Sign in
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card">
+                            <div class="card-header bg-dark text-light">
+                                <h4 class="text-center">Watch Wave- Login</h4>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="username" class="form-label">Username</label>
+                                        <input type="text" class="form-control" id="username"
+                                            placeholder="Enter your username">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="password"
+                                            placeholder="Enter your password">
+                                    </div>
+                                    <button type="submit" class="btn btn-dark btn-block">Login</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="text-dark  ms-2">Don't have an account? <a href="./signup.html"
+                            class="text-decoration-none">Create account</a></span>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal end -->
+
+
+
         <div class="row">
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -525,6 +575,95 @@
         </div>
 
 
+        <!-- music -->
+        <div class="row">
+            <h3 class="fw-bolder text-warning mt-5 ms-5 w-75">Popular Music
+            </h3>
+            <div class="col-md-12 d-md-flex">
+                <div class="col-md-3 col-12 mt-md-5 m-md-3 my-3">
+                    <div class="card bg-dark">
+                        <div class="card-body">
+                            <a href=""> <img src="./img/indeximg/music1.jpg"
+                                    class="d-flex justify-content-center w-100"></a>
+
+                            <span class="fw-bolder text-light fs-3">
+                                Galliyan</span><br>
+                            <p class="text-light"> Hindi <i class="bi bi-dot"></i>Romance<i class="bi bi-dot"></i> U/A
+                                16+
+                            </p>
+
+                            <p class="text text-light p-1">
+                                "Galliyan" is a popular song from the Bollywood movie "Ek Villain," which was released
+                                in 2014. The song is composed by Ankit Tiwari, with lyrics penned by Manoj Muntashir.
+                               
+                           </p>
+                            <button class="btn btn-outline-danger "> <i class="bi bi-play-circle"></i>
+                                watch</button>
+                            <button class="btn btn-outline-primary ms-3 "><i class="bi bi-share"></i> Share</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-12 mt-md-5 m-md-3 my-3">
+                    <div class="card bg-dark">
+                        <div class="card-body">
+                            <a href=""><img src="./img/indeximg/music2.jpg"
+                                    class="d-flex justify-content-center w-100"></a>
+
+                            <span class="fw-bolder text-light fs-3">Tu Meri Rehna</span><br>
+                            <p class="text-light"> Hindi <i class="bi bi-dot"></i>Drama<i class="bi bi-dot"></i> U/A
+                                18+
+                            </p>
+
+                            <p class="text text-light p-1">
+                                Tu Meri Rehna Song | Satyaprem Ki Katha Songs | Kartik Aryan, Kiara | Satyaprem Ki Katha Movie Song
+                            </p>
+                            <button class="btn btn-outline-danger "> <i class="bi bi-play-circle"></i>
+                                watch</button>
+                            <button class="btn btn-outline-primary ms-3 "><i class="bi bi-share"></i> Share</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-12 mt-md-5 m-md-3 my-3">
+                    <div class="card bg-dark">
+                        <div class="card-body">
+                            <a href=""><img src="./img/indeximg/music3.jpg"
+                                    class="d-flex justify-content-center w-100"></a>
+
+                            <span class="fw-bolder text-light fs-3">Tum kya mile</span><br>
+                            <p class="text-light"> Hindi <i class="bi bi-dot"></i>Romance<i class="bi bi-dot"></i> U/A
+                                23+
+                            </p>
+
+
+                            <p class="text text-light p-1">
+                                Tum Kya Mile - Rocky Aur Rani Kii Prem Kahaani | Ranveer | Alia | Pritam | Amitabh | Arijit | Shreya
+                            </p>
+                            <button class="btn btn-outline-danger "> <i class="bi bi-play-circle"></i>
+                                watch</button>
+                            <button class="btn btn-outline-primary ms-3 "><i class="bi bi-share"></i> Share</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-2 col-12 mt-4 ms-md-2 opacity-25 my-3">
+                    <div class="card mt-md-2 mt-md-4">
+                        <a href="">
+                            <img src="./img/indeximg/musicex.jpg" class="h-100 w-100 ">
+                            <p class="text-warning card-img-overlay d-flex justify-content-center mt-5 fw-bold fs-4">see
+                                more..</p>
+                    </div>
+                    </a>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
 
 
         <!-- News channels -->
@@ -689,26 +828,30 @@
         <div id="faq-container">
             <div class="faq">
                 <div class="question">1. Q: What is WatchWave?</div>
-                <div class="answer ">ANS: WatchWave is a OTT platform Which You can use For Your Entertainment,Social
+                <div class="answer text-warning ">ANS: WatchWave is a OTT platform Which You can use For Your
+                    Entertainment,Social
                     Awareness. Our Website Offers You all types of movies,cartoons for kids and much more.
                 </div>
             </div>
 
             <div class="faq">
                 <div class="question">2. Q: What is the best thing watchWave Platform contain ?</div>
-                <div class="answer">ANS: We offer you free Entertainment by Movies,Series,Sports and Social Awareness by
+                <div class="answer text-warning">ANS: We offer you free Entertainment by Movies,Series,Sports and Social
+                    Awareness by
                     news. WatchWave is the best ott platform because We Fullfill all requirements of Users. </div>
             </div>
 
             <div class="faq">
                 <div class="question">3. Q: How can I watch?</div>
-                <div class="answer">ANS: We Provide Download option ,also user can watch live news and also watch in
+                <div class="answer text-warning">ANS: We Provide Download option ,also user can watch live news and also
+                    watch in
                     online mode.</div>
             </div>
 
             <div class="faq">
                 <div class="question">4. Q: Where can I Watch?</div>
-                <div class="answer">ANS: Watch anywhere, anytime. Sign in with your WatchWave account to watch instantly
+                <div class="answer text-warning">ANS: Watch anywhere, anytime. Sign in with your WatchWave account to
+                    watch instantly
                     on the web at WatchWave.com from your personal computer or on any internet-connected device that
                     offers the WatchWave app, including smart TVs, smartphones, tablets, streaming media players and
                     game consoles.
@@ -717,21 +860,24 @@
 
             <div class="faq">
                 <div class="question">5. Q: How do I?</div>
-                <div class="answer">ANS: WatchWave is flexible. There are no annoying contracts and no commitments. You
+                <div class="answer text-warning">ANS: WatchWave is flexible. There are no annoying contracts and no
+                    commitments. You
                     can easily cancel your account online in two clicks. There are no cancellation fees – start or stop
                     your account anytime.</div>
             </div>
 
             <div class="faq">
                 <div class="question">6. Q: What can I watch?</div>
-                <div class="answer">ANS: WatchWave has an extensive library of feature films, documentaries, TV shows,
+                <div class="answer text-warning">ANS: WatchWave has an extensive library of feature films,
+                    documentaries, TV shows,
                     anime, award-winning WatchWave originals, and more. Watch as much as you want, anytime you want.
                 </div>
             </div>
 
             <div class="faq">
                 <div class="question">7. Q: If WatchWave good for kids?</div>
-                <div class="answer">ANS: The WacthWave Kids experience is included in your membership to give parents
+                <div class="answer text-warning">ANS: The WacthWave Kids experience is included in your membership to
+                    give parents
                     control while kids enjoy family-friendly TV shows and films in their own space.
 
                     Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of
