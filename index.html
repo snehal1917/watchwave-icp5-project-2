@@ -23,7 +23,7 @@
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content bg-transparent">
+                <div class="modal-content bg-transparent ">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Signin Page</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -37,21 +37,22 @@
                                 <form>
                                     <div class="mb-3">
                                         <label for="username" class="form-label text-light ">Username</label>
-                                        <input type="text" class="form-control bg-transparent text" id="username"
+                                        <input type="text" class="form-control bg-transparent place" id="username"
                                             placeholder="Enter your username">
                                     </div>
                                     <div class="mb-3">
                                         <label for="password" class="form-label text-light">Password</label>
-                                        <input type="password" class="form-control bg-transparent" id="password"
+                                        <input type="password" class="form-control bg-transparent place" id="password"
                                             placeholder="Enter your password">
                                     </div>
-                                    <button type="submit" class="btn btn-dark btn-block">Login</button>
+                                    <button type="submit" class="btn btn-secondary btn-block" onclick="msg()">Login</button>
                                 </form>
                             </div>
                         </div>
                     </div>
-                    <span class="text-light ms-2">Don't have an account? <a href="./signup.html"
-                            class="text-decoration-none">Create account</a></span>
+                    <span class="text-light ms-2">Don't have an account?  <button type="button" class="btn text-info" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                     Create Account
+                    </button>  </span>
                     <div class="modal-footer">
 
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -62,6 +63,54 @@
         </div>
         <!-- modal end -->
 
+        <!-- second modal -->
+
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-transparent">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Signin Page</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card-e bg-transparent">
+                            <div class="card-header text-light">
+                                <h4 class="text-center">Watch Wave-SignUp</h4>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="username" class="form-label text-light ">Username</label>
+                                        <input type="text" class="form-control bg-transparent place" id="username"
+                                            placeholder="Enter your username">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" type="email" class="form-label text-light place">Email</label>
+                                        <input type="text" class="form-control bg-transparent " id="username"
+                                            placeholder="Enter your Email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label text-light">Password</label>
+                                        <input type="password" class="form-control bg-transparent place" id="password"
+                                            placeholder="Enter your password">
+                                    </div>
+                                    <button type="submit" class="btn btn-secondary btn-block" onclick="msg()">Login</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="text-light ms-2">Already have an account?  <button type="button" class="btn text-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                     Login
+                    </button>  </span>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- Second modal end -->
 
 
         <div class="row">
@@ -923,6 +972,9 @@
             });
             showAnswersBtn.textContent = 'Hide Answers';
         }
+    }
+    function msg(){
+        alert ('Successfully Loggedin')
     }
 </script>
 

@@ -72,3 +72,9 @@ transition: background-color 0.3s;
 .show-answers-btn:hover {
 background-color: #0056b3;
 }
+.modal-dialog{
+    opacity: 1.5;
+}
+.place::placeholder{
+color: #ccc;
+}
