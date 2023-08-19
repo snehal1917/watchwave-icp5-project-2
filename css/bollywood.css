@@ -1,0 +1,37 @@
+body{
+    margin: 0px;
+    padding: 0px;
+  background-color: #060d17;
+  color: #a7aebd;
+}
+.text-c{color: #6a7c8f;}
+.img-iconplay{
+margin-left: 45%;
+margin-top: 10%;
+display: inline-block;
+} 
+.icon-div{
+margin-top: auto;
+margin-bottom: auto;
+display: block;
+}
+
+.hei-10{
+height: 21px;
+}
+.bg-img{
+background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+url(background-img.jpg);
+background-size: cover;
+height: 100vh;
+width: 100%;
+}
+div.scroll-container {
+background-color:  #060d17;
+overflow: auto;
+white-space: nowrap;
+padding: 10px;
+
+margin-right: 30px;
+margin-bottom: 60px;
+}
