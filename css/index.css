@@ -78,3 +78,6 @@ background-color: #0056b3;
 .place::placeholder{
 color: #ccc;
 }
+.shadow{
+    text-shadow: none;
+}
