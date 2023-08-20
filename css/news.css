@@ -6,7 +6,18 @@
 .fm{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.card:hover{
+
+.card-body
+{
+    display: none;
+}
+
+.card:hover .card-body
+{
+    display: block;
+}
+.card:hover 
+{
     transform: scale(1.1);
     transition: 1s;
     box-shadow: 0 0 0 5px white;
