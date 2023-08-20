@@ -5,3 +5,39 @@
     margin: 0;
 }
 
+.A
+{
+    color: orangered;
+}
+
+.main
+{
+    margin-left: 100px;
+    background-color: rgb(11, 11, 18);
+}
+
+.main-img
+{
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.butn
+{
+    width:430px;
+    margin-left: 20px;
+}
+
+.show
+{
+   width:1200px;
+   margin: 50px;
+}
+
+scrol{
+    overflow: scroll;
+}
+
+.fm{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
