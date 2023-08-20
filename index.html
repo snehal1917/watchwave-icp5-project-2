@@ -72,8 +72,6 @@
 
                         <h5 class="modal-title" id="exampleModalLabel">Create Account</h5>
 
-                        <h5 class="modal-title" id="exampleModalLabel">Signin Page</h5>
-
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -91,12 +89,8 @@
                                     <div class="mb-3">
 
                                         <label for="email" type="email" class="form-label text-light ">Email</label>
-                                        <input type="text" class="form-control bg-transparent place" id="username"
-
-                                        <label for="email" type="email" class="form-label text-light place">Email</label>
-                                        <input type="text" class="form-control bg-transparent " id="username"
-
-                                            placeholder="Enter your Email">
+                                        <input type="text" class="form-control bg-transparent place" id="username" 
+                                        placeholder="Enter your Email">
                                     </div>
                                     <div class="mb-3">
                                         <label for="password" class="form-label text-light">Password</label>
@@ -104,9 +98,7 @@
                                             placeholder="Enter your password">
                                     </div>
 
-                                    <button type="submit" class="btn btn-secondary btn-block" onclick="msg()">Create</button>
-
-                                    <button type="submit" class="btn btn-secondary btn-block" onclick="msg()">Login</button>
+                                    <button type="submit" class="btn btn-secondary btn-block" onclick="create()">Create</button>
 
                                 </form>
                             </div>
@@ -134,17 +126,17 @@
 
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/indeximg/poster2.jpg" class="d-block w-100 ">
+                        <img src="./img/indeximg/poster2.jpg" class="d-block w-100 ">
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/indeximg/poster3.jpg" class="d-block w-100">
+                        <img src="./img/indeximg/poster3.jpg" class="d-block w-100">
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/indeximg/poster4.webp" class="d-block w-100 ">
+                        <img src="./img/indeximg/poster4.webp" class="d-block w-100 ">
 
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/indeximg/poster5.jpg" class="d-block w-100 ">
+                        <img src="./img/indeximg/poster5.jpg" class="d-block w-100 ">
                     </div>
 
 
@@ -162,7 +154,7 @@
             </div>
         </div>
 
-        <!-- cards -->
+        <!--Bollywood cards -->
 
 
         <div class="row">
@@ -237,11 +229,11 @@
                 </div>
 
 
-                <div class="col-md-2 col-12 mt-4 ms-md-2 opacity-25 my-3">
+                <div class="col-md-2 col-12 mt-4 ms-md-2 my-3 opacity-25">
                     <div class="card mt-md-4">
-                        <a href="">
+                        <a href="./pages/bollywood/bollywood.html">
                             <img src="./img/indeximg/cardimgex.jpg" class="h-100 w-100 ">
-                            <p class="text-warning card-img-overlay d-flex justify-content-center mt-5 fw-bold fs-4">see
+                            <p class="text-warning card-img-overlay d-flex justify-content-center mt-5 fw-bold fs-4" >see
                                 more..</p>
                     </div>
                     </a>
@@ -323,10 +315,10 @@
                 </div>
 
 
-                <div class="col-md-2 col-12 mt-4 ms-md-2 opacity-25 my-3">
+                <div class="col-md-2 col-12 mt-4 ms-md-2 my-3 opacity-25">
                     <div class="card mt-md-2">
-                        <a href="">
-                            <img src="./img/indeximg/cardimgex2.jpg" class="h-100 w-100">
+                        <a href="./pages/webseries.html">
+                            <img src="./img/indeximg/cardimgex2.jpg" class="h-100 w-100" >
                             <p class="text-warning card-img-overlay d-flex justify-content-center mt-5 fw-bold fs-4">see
                                 more..</p>
                     </div>
@@ -527,7 +519,7 @@
 
                 <div class="col-md-2 col-12 mt-4 ms-md-2 opacity-25 my-3">
                     <div class="card mt-md-2 mt-md-4">
-                        <a href="">
+                        <a href="./pages/Tollywoodcinema.html">
                             <img src="./img/indeximg/tolyex.jpg" class="h-100 w-100 ">
                             <p class="text-warning card-img-overlay d-flex justify-content-center mt-5 fw-bold fs-4">see
                                 more..</p>
@@ -730,7 +722,7 @@
 
         <!-- News channels -->
         <div class="row">
-            <h3 class="text-center my-5 text-warning text-center text-md-start">Watch latest News : News Channels</h3>
+            <h3 class="text-center my-5 text-warning text-center ">Watch latest News : News Channels</h3>
             <div class="col-md-12 newschannel ">
                 <a href="" class=" d-md-flex justify-content-center ">
                     <div class="col-md-2 col-12 news">
@@ -854,7 +846,7 @@
 
                 <div class="col-md-2 col-12 mt-4 ms-md-2 opacity-25 my-3">
                     <div class="card mt-md-2 mt-md-4">
-                        <a href="">
+                        <a href="./pages/cartoon.html">
                             <img src="./img/indeximg/cartoonex.jpg" class="h-100 w-100 ">
                             <p class="text-warning card-img-overlay d-flex justify-content-center mt-5 fw-bold fs-4">see
                                 more..</p>
@@ -885,7 +877,7 @@
 
 
 
-        <h1 class="text-center fw-bolder">Frequently Asked Questions</h1>
+        <h1 class="text-center fw-bolder text-warning">Frequently Asked Questions</h1>
         <br>
         <div id="faq-container">
             <div class="faq">
@@ -988,6 +980,9 @@
     }
     function msg(){
         alert ('Successfully Loggedin')
+    }
+    function create(){
+        alert ('Successfully Created Account')
     }
 </script>
 

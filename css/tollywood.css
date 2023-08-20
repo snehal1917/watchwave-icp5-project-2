@@ -18,5 +18,9 @@
   transition: 0.5s;  
 }
 .slideimage{
-    height: 700px;
+    height: 750px;
+}
+.text{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
 }
