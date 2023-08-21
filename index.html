@@ -12,8 +12,11 @@
 
 </head>
 
-<body class="text-light" onload="welcome()">
-    <div class="container-fluid">
+<body class="body-dark" onload="welcome()" id="body">
+
+    <button onclick="theme()" class="btn btn-info mb-3">theme</button>
+
+ <div class="container-fluid">
 
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -336,7 +339,7 @@
 
         <!-- row3 -->
         <div class="row">
-            <div class="col-md-12 d-md-flex mt-5 justify-content-center">
+            <div class="col-md-12 d-md-flex mt-5 justify-content-center ">
                 <div class="mt-md-5 ms-4">
                     <h1 class="fw-bolder fs-1">Download your shows <br>to watch offline</h1>
                     <p> Save your favourites easily and always have something to watch.</p>
@@ -972,9 +975,9 @@
 
         <h1 class="text-center fw-bolder text-warning">Frequently Asked Questions</h1>
         <br>
-        <div id="faq-container">
+        <div id="faq-container" >
             <div class="faq">
-                <div class="question">1. Q: What is WatchWave?</div>
+                <div class="question textlight">1. Q: What is WatchWave?</div>
                 <div class="answer text-warning "><h5>ANS:</h5>WatchWave is a OTT platform Which You can use For Your
                     Entertainment,Social
                     Awareness. Our Website Offers You all types of movies,cartoons for kids and much more.
@@ -982,21 +985,21 @@
             </div>
 
             <div class="faq">
-                <div class="question">2. Q: What is the best thing watchWave Platform contain ?</div>
+                <div class="question textlight">2. Q: What is the best thing watchWave Platform contain ?</div>
                 <div class="answer text-warning"><h5>ANS:</h5> We offer you free Entertainment by Movies,Series,Sports and Social
                     Awareness by
                     news. WatchWave is the best ott platform because We Fullfill all requirements of Users. </div>
             </div>
 
             <div class="faq">
-                <div class="question">3. Q: How can I watch?</div>
+                <div class="question textlight">3. Q: How can I watch?</div>
                 <div class="answer text-warning"><h5>ANS:</h5> We Provide Download option ,also user can watch live news and also
                     watch in
                     online mode.</div>
             </div>
 
             <div class="faq">
-                <div class="question">4. Q: Where can I Watch?</div>
+                <div class="question textlight">4. Q: Where can I Watch?</div>
                 <div class="answer text-warning"><h5>ANS:</h5> Watch anywhere, anytime. Sign in with your WatchWave account to
                     watch instantly
                     on the web at WatchWave.com from your personal computer or on any internet-connected device that
@@ -1006,7 +1009,7 @@
             </div>
 
             <div class="faq">
-                <div class="question">5. Q: How do I?</div>
+                <div class="question textlight">5. Q: How do I?</div>
                 <div class="answer text-warning"><h5>ANS:</h5> WatchWave is flexible. There are no annoying contracts and no
                     commitments. You
                     can easily cancel your account online in two clicks. There are no cancellation fees – start or stop
@@ -1014,7 +1017,7 @@
             </div>
 
             <div class="faq">
-                <div class="question">6. Q: What can I watch?</div>
+                <div class="question textlight">6. Q: What can I watch?</div>
                 <div class="answer text-warning"><h5>ANS:</h5> WatchWave has an extensive library of feature films,
                     documentaries, TV shows,
                     anime, award-winning WatchWave originals, and more. Watch as much as you want, anytime you want.
@@ -1022,7 +1025,7 @@
             </div>
 
             <div class="faq">
-                <div class="question">7. Q: If WatchWave good for kids?</div>
+                <div class="question textlight">7. Q: If WatchWave good for kids?</div>
                 <div class="answer text-warning"><h5>ANS:</h5>The WacthWave Kids experience is included in your membership to
                     give parents
                     control while kids enjoy family-friendly TV shows and films in their own space.
@@ -1080,6 +1083,22 @@
     function welcome(){
         alert('Welcome to watchWave😍');
     }
+    function theme(){
+        const color=document.getElementById('body')
+if(color==='body-light')  
+{
+    const light=document.getElementById('body')
+    light.classList.remove('body-light');
+    light.classList.add('body-dark');
+}
+else
+{
+    const light=document.getElementById('body')
+    light.classList.remove('body-dark');
+    light.classList.add('body-light');
+}
+}
+</script>
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

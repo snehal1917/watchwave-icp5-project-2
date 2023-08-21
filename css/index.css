@@ -16,9 +16,7 @@
     transition: 1s;
 }
 
-body {
-    background-color: #00050d;
-}
+
 
 .faq {
 background-color: transparent;
@@ -42,7 +40,6 @@ color:white;
 font-size: 20px;
 font-weight: bold;
 color: #0b0a0a;
-text-shadow: 2px 2px rgb(236, 230, 236);
 display: none;
 margin-top: 10px;
 opacity: 0;
@@ -78,6 +75,15 @@ background-color: #0056b3;
 .place::placeholder{
 color: #ccc;
 }
-.shadow{
-    text-shadow: none;
+.body-dark{
+    background-color: #00050d;
+    color: white;
+}
+
+.body-light{
+    background-color: rgb(186, 180, 180);
+    color: black;
+}
+.body-light .textlight{
+   color: #00050d;
 }
