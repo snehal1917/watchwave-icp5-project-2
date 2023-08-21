@@ -12,11 +12,12 @@
 
 </head>
 
-<body class="body-dark" onload="welcome()" id="body">
+<body class="body-dark" id="body">
+    <button onclick="light()" class="btn btn-info mb-3"><i class="bi bi-moon-fill"></i></button>
+    <button onclick="dark()" class="btn btn-info mb-3"><i class="bi bi-brightness-low-fill"></i> </button>
 
-    <button onclick="theme()" class="btn btn-info mb-3">theme</button>
 
- <div class="container-fluid">
+    <div class="container-fluid">
 
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -26,26 +27,26 @@
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content bg-transparent ">
+                <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Signin Page</h5>
+                        <h5 class="m-color modal-title" id="exampleModalLabel">Signin Page</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="card-e bg-transparent">
-                            <div class="card-header text-light">
+                        <div class="card-l">
+                            <div class="card-header">
                                 <h4 class="text-center">Watch Wave- Login</h4>
                             </div>
                             <div class="card-body">
                                 <form>
                                     <div class="mb-3">
-                                        <label for="username" class="form-label text-light ">Username</label>
-                                        <input type="text" class="form-control bg-transparent place" id="username"
+                                        <label for="username" class="form-label">Username</label>
+                                        <input type="text" class="form-control place" id="username"
                                             placeholder="Enter your username">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="password" class="form-label text-light">Password</label>
-                                        <input type="password" class="form-control bg-transparent place" id="password"
+                                        <label for="password" class="form-label ">Password</label>
+                                        <input type="password" class="form-control  place" id="password"
                                             placeholder="Enter your password">
                                     </div>
                                     <button type="submit" class="btn btn-secondary btn-block"
@@ -54,7 +55,7 @@
                             </div>
                         </div>
                     </div>
-                    <span class="text-light ms-2">Don't have an account? <button type="button" class="btn text-info"
+                    <span class="m-color ">Don't have an account? <button type="button" class="btn text-info"
                             data-bs-toggle="modal" data-bs-target="#exampleModal2">
                             Create Account
                         </button> </span>
@@ -72,34 +73,34 @@
 
         <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content bg-transparent">
+                <div class="modal-content ">
                     <div class="modal-header">
 
-                        <h5 class="modal-title" id="exampleModalLabel">Create Account</h5>
+                        <h5 class="modal-title m-color" id="exampleModalLabel">Create Account</h5>
 
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="card-e bg-transparent">
-                            <div class="card-header text-light">
+                        <div class="card-l">
+                            <div class="card-header ">
                                 <h4 class="text-center">Watch Wave-SignUp</h4>
                             </div>
                             <div class="card-body">
                                 <form>
                                     <div class="mb-3">
-                                        <label for="username" class="form-label text-light ">Username</label>
-                                        <input type="text" class="form-control bg-transparent place" id="username"
+                                        <label for="username" class="form-label ">Username</label>
+                                        <input type="text" class="form-control  place" id="username"
                                             placeholder="Enter your username">
                                     </div>
                                     <div class="mb-3">
 
-                                        <label for="email" type="email" class="form-label text-light ">Email</label>
-                                        <input type="text" class="form-control bg-transparent place" id="username"
+                                        <label for="email" type="email" class="form-label ">Email</label>
+                                        <input type="text" class="form-control  place" id="username"
                                             placeholder="Enter your Email">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="password" class="form-label text-light">Password</label>
-                                        <input type="password" class="form-control bg-transparent place" id="password"
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control place" id="password"
                                             placeholder="Enter your password">
                                     </div>
 
@@ -110,7 +111,7 @@
                             </div>
                         </div>
                     </div>
-                    <span class="text-light ms-2">Already have an account? <button type="button" class="btn text-info"
+                    <span class="m-color">Already have an account? <button type="button" class="btn text-info"
                             data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Login
                         </button> </span>
@@ -170,7 +171,7 @@
                 <div class="col-md-3 col-12  mt-md-5 m-md-3 my-3">
                     <div class="card bg-dark">
                         <div class="card-body">
-                            <a href=""><img src="./img/indeximg/cardimg-1.avif"
+                            <a href="/pages/bholaa movie.html"><img src="./img/indeximg/cardimg-1.avif"
                                     class="d-flex justify-content-center w-100"></a>
 
                             <span class="fw-bolder text-light fs-3">Bholaa </span><br>
@@ -192,7 +193,7 @@
                 <div class="col-md-3 col-12 mt-md-5 m-md-3 my-3">
                     <div class="card bg-dark">
                         <div class="card-body">
-                            <a href=""><img src="./img/indeximg/cardimg-2.jpg"
+                            <a href="./pages/satya prem ki katha.html"><img src="./img/indeximg/cardimg-2.jpg"
                                     class="d-flex justify-content-center w-100"></a>
 
                             <span class="fw-bolder text-light fs-3">Satyaprem Ki Katha</span><br>
@@ -215,7 +216,7 @@
                 <div class="col-md-3 col-12 mt-md-5 m-md-3 my-3">
                     <div class="card bg-dark">
                         <div class="card-body">
-                            <a href=""> <img src="./img/indeximg/cardimg-3.webp"
+                            <a href="/pages/jugjug jiyo.html"> <img src="./img/indeximg/cardimg-3.webp"
                                     class="d-flex justify-content-center w-100"></a>
 
                             <span class="fw-bolder text-light fs-3">JugJugg Jeeyo</span><br>
@@ -258,7 +259,7 @@
                 <div class="col-md-3 col-12 mt-md-5 m-md-3 my-3">
                     <div class="card bg-dark">
                         <div class="card-body">
-                            <a href=""> <img src="./img/indeximg/cardimg-4.jpg"
+                            <a href="/pages/kalkoot.html"> <img src="./img/indeximg/cardimg-4.jpg"
                                     class="d-flex justify-content-center w-100"></a>
 
                             <span class="fw-bolder text-light fs-3">KaalKoot </span><br>
@@ -280,7 +281,7 @@
                 <div class="col-md-3 col-12 mt-md-5 m-md-3 my-3">
                     <div class="card bg-dark">
                         <div class="card-body">
-                            <a href=""><img src="./img/indeximg/cardimg-5.jpg"
+                            <a href="/pages/Asur 2.html"><img src="./img/indeximg/cardimg-5.jpg"
                                     class="d-flex justify-content-center w-100"></a>
 
                             <span class="fw-bolder text-light fs-3">Asur 2</span><br>
@@ -302,7 +303,7 @@
                 <div class="col-md-3 col-12 mt-md-5 m-md-3 my-3">
                     <div class="card bg-dark">
                         <div class="card-body">
-                            <a href=""><img src="./img/indeximg/cardimg-6.avif"
+                            <a href="/pages/Rafuchakkar.html"><img src="./img/indeximg/cardimg-6.avif"
                                     class="d-flex justify-content-center w-100"></a>
 
                             <span class="fw-bolder text-light fs-3">Rafuchakkar</span><br>
@@ -340,16 +341,30 @@
         <!-- row3 -->
         <div class="row">
             <div class="col-md-12 d-md-flex mt-5 justify-content-center ">
-                <div class="mt-md-5 ms-4">
-                    <h1 class="fw-bolder fs-1">Download your shows <br>to watch offline</h1>
+                <div class="col-md-5 mt-md-5 ms-4">
+                    <h1 class="fw-bolder fs-1 ">Download your shows <br>to watch offline</h1>
                     <p> Save your favourites easily and always have something to watch.</p>
+                    <br><Br>
+                    <h4>Related to Subscription</h4>
+                   🌊 Ride the Wave of Unlimited Access: As a subscriber, you're not just a viewer – you're a voyager
+                    on a cinematic journey. Immerse yourself in an ocean of movies, TV shows, documentaries, and more,
+                    all at your fingertips.
+                      <br>  <br>
+                    
+                    🌟 Seamless Streaming, Anytime, Anywhere: Whether you're lounging at home, commuting, or taking a
+                    break at work, our platform delivers your favorite content with a few clicks. From gripping
+                    originals to timeless classics, the streaming never stops.
+                    <br> <br>
+                    💎 Exclusive Gems, Just for You: Prepare to be amazed by our exclusive content, carefully curated to cater to your every mood and preference. Discover hidden gems that elevate your viewing experience.
                 </div>
-                <img src="./img/indeximg/downloaf.png" class="ms-md-5 d-block justify-content-center">
-
+                <div class="col-md-5 ">
+                    <img src="./img/indeximg/downloaf.png" class="ms-md-5 d-block justify-content-center h-75">
+                </div>
 
             </div>
+            <hr>
         </div>
-        <hr>
+
 
         <!-- cartoon  7 -->
         <div class="row">
@@ -671,7 +686,8 @@
                                     class="d-flex justify-content-center w-100"></a>
 
                             <span class="fw-bolder text-light fs-3">Wednesday</span><br>
-                            <p class="text-light">English<i class="bi bi-dot"></i>Comedy<i class="bi bi-dot"></i> U/A 19+
+                            <p class="text-light">English<i class="bi bi-dot"></i>Comedy<i class="bi bi-dot"></i> U/A
+                                19+
                             </p>
 
                             <p class="text text-light p-1">
@@ -710,7 +726,7 @@
 
                 <div class="col-md-2 col-12 mt-4 ms-md-2 my-3 opacity-25">
                     <div class="card mt-md-4">
-                        <a href="./holly.html">
+                        <a href="/pages/holly.html">
                             <img src="./img/indeximg/hollywoodex.jpg" class="h-100 w-100 ">
                             <p class="text-warning card-img-overlay d-flex justify-content-center mt-5 fw-bold fs-4">see
                                 more..</p>
@@ -818,7 +834,8 @@
 
         <!-- News channels -->
         <div class="row">
-            <h3 class="text-center my-5 text-warning text-center ">Watch latest News : News Channels</h3>
+            <h3 class="text-center my-5 text-warning text-center ">Watch latest News : News Channels <a
+                    href="/pages/news.html" class="text-decoration-none fs-5">see more..</a></h3>
             <div class="col-md-12 newschannel ">
                 <a href="" class=" d-md-flex justify-content-center ">
                     <div class="col-md-2 col-12 news">
@@ -971,74 +988,163 @@
         </div>
         <hr>
 
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-center text-warning fs-1 fw-bolder mb-5">Frequently Asked Questions</h2>
+                <div class="accordion" id="faqAccordion">
 
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <h1 class="text-center fw-bolder text-warning">Frequently Asked Questions</h1>
-        <br>
-        <div id="faq-container" >
-            <div class="faq">
-                <div class="question textlight">1. Q: What is WatchWave?</div>
-                <div class="answer text-warning "><h5>ANS:</h5>WatchWave is a OTT platform Which You can use For Your
+    <div class="container">
+        <div class="card-e bg-transparent">
+            <div class="card-header" id="faqHeading1">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-decoration-none text-light fs-2 fw-bolder" data-toggle="collapse"
+                        data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                        <span class="textlight"> 1. Q: What is WatchWave?</span>
+                    </button>
+                </h5>
+            </div>
+
+            <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                <div class="card-body text-warning fs-5">
+                    ANS: WatchWave is a OTT platform Which You can use For Your
                     Entertainment,Social
-                    Awareness. Our Website Offers You all types of movies,cartoons for kids and much more.
+                    Awareness. Our Website Offers You all types of movies,cartoons for kids and much
+                    more.
                 </div>
             </div>
+            <hr>
+            <div class="card-header" id="faqHeading1">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-decoration-none text-light fs-2 fw-bolder" data-toggle="collapse"
+                        data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                        <span class="textlight"> 2. Q: What is the best thing watchWave Platform contain?</span>
 
-            <div class="faq">
-                <div class="question textlight">2. Q: What is the best thing watchWave Platform contain ?</div>
-                <div class="answer text-warning"><h5>ANS:</h5> We offer you free Entertainment by Movies,Series,Sports and Social
+                    </button>
+                </h5>
+            </div>
+
+            <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                <div class="card-body text-warning fs-5">
+                    ANS: We offer you free Entertainment by Movies,Series,Sports and Social
                     Awareness by
-                    news. WatchWave is the best ott platform because We Fullfill all requirements of Users. </div>
-            </div>
-
-            <div class="faq">
-                <div class="question textlight">3. Q: How can I watch?</div>
-                <div class="answer text-warning"><h5>ANS:</h5> We Provide Download option ,also user can watch live news and also
-                    watch in
-                    online mode.</div>
-            </div>
-
-            <div class="faq">
-                <div class="question textlight">4. Q: Where can I Watch?</div>
-                <div class="answer text-warning"><h5>ANS:</h5> Watch anywhere, anytime. Sign in with your WatchWave account to
-                    watch instantly
-                    on the web at WatchWave.com from your personal computer or on any internet-connected device that
-                    offers the WatchWave app, including smart TVs, smartphones, tablets, streaming media players and
-                    game consoles.
-                    You can also download your favourite shows with the iOS, Android, or Windows 10 app. </div>
-            </div>
-
-            <div class="faq">
-                <div class="question textlight">5. Q: How do I?</div>
-                <div class="answer text-warning"><h5>ANS:</h5> WatchWave is flexible. There are no annoying contracts and no
-                    commitments. You
-                    can easily cancel your account online in two clicks. There are no cancellation fees – start or stop
-                    your account anytime.</div>
-            </div>
-
-            <div class="faq">
-                <div class="question textlight">6. Q: What can I watch?</div>
-                <div class="answer text-warning"><h5>ANS:</h5> WatchWave has an extensive library of feature films,
-                    documentaries, TV shows,
-                    anime, award-winning WatchWave originals, and more. Watch as much as you want, anytime you want.
+                    news. WatchWave is the best ott platform because We Fullfill all requirements of
+                    Users.
                 </div>
             </div>
+            <hr>
+            <div class="card-header" id="faqHeading1">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-decoration-none text-light fs-2 fw-bolder" data-toggle="collapse"
+                        data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                        <span class="textlight"> 3. Q: How can I watch?</span>
+                    </button>
+                </h5>
+            </div>
 
-            <div class="faq">
-                <div class="question textlight">7. Q: If WatchWave good for kids?</div>
-                <div class="answer text-warning"><h5>ANS:</h5>The WacthWave Kids experience is included in your membership to
+            <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                <div class="card-body text-warning fs-5">
+                    ANS: We Provide Download option ,also user can watch live news and also
+                    watch in
+                    online mode.
+                </div>
+            </div>
+            <hr>
+            <div class="card-header" id="faqHeading1">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-decoration-none text-light fs-2 fw-bolder" data-toggle="collapse"
+                        data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                        <span class="textlight"> 4. Q: Where can I Watch?</span>
+                    </button>
+                </h5>
+            </div>
+
+            <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                <div class="card-body text-warning fs-5">
+                    ANS: Watch anywhere, anytime. Sign in with your WatchWave account to
+                    watch instantly
+                    on the web at WatchWave.com from your personal computer or on any internet-connected
+                    device that
+                    offers the WatchWave app, including smart TVs, smartphones, tablets, streaming media
+                    players and
+                    game consoles.
+                    You can also download your favourite shows with the iOS, Android, or Windows 10 app
+                </div>
+            </div>
+            <hr>
+            <div class="card-header" id="faqHeading1">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-decoration-none text-light fs-2 fw-bolder" data-toggle="collapse"
+                        data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                        <span class="textlight"> 5. Q: How do I?</span>
+                    </button>
+                </h5>
+            </div>
+
+            <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                <div class="card-body text-warning fs-5">
+                    ANS: WatchWave is flexible. There are no annoying contracts and no
+                    commitments. You
+                    can easily cancel your account online in two clicks. There are no cancellation fees
+                    – start or stop
+                    your account anytime.
+                </div>
+            </div>
+            <hr>
+            <div class="card-header" id="faqHeading1">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-decoration-none text-light fs-2 fw-bolder" data-toggle="collapse"
+                        data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                        <span class="textlight"> 6. Q: What can I watch?</span>
+                    </button>
+                </h5>
+            </div>
+
+            <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                <div class="card-body text-warning fs-5">
+                    ANS: WatchWave has an extensive library of feature films,
+                    documentaries, TV shows,
+                    anime, award-winning WatchWave originals, and more. Watch as much as you want,
+                    anytime you want.
+                </div>
+            </div>
+            <hr>
+            <div class="card-header" id="faqHeading1">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-decoration-none text-light fs-2 fw-bolder" data-toggle="collapse"
+                        data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                        <span class="textlight"> 7. Q: Is WatchWave good for kids?</span>
+                    </button>
+                </h5>
+            </div>
+
+            <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                <div class="card-body text-warning fs-5">
+                    ANS: The WacthWave Kids experience is included in your membership to
                     give parents
                     control while kids enjoy family-friendly TV shows and films in their own space.
 
-                    Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of
-                    content kids can watch and block specific titles you don’t want kids to see.</div>
+                    Kids profiles come with PIN-protected parental controls that let you restrict the
+                    maturity rating of
+                    content kids can watch and block specific titles you don’t want kids to see.
+                </div>
             </div>
-
-
-
-            <button class="show-answers-btn" onclick="toggleAnswers()">Show Answers</button>
         </div>
 
+
+
+        <div class="justify-content-center d-flex">
+            <button class="btn  btn-warning btn-lg text-decoration-none text-light m-3" data-toggle="collapse"
+                data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1" id="ansbtn"
+                onclick="change()">
+                show Answers
+            </button>
+        </div>
+    </div>
 
 
 
@@ -1050,59 +1156,42 @@
 
 
 <script>
-    const faqs = document.querySelectorAll('.faq');
-
-    faqs.forEach(faq => {
-        faq.addEventListener('click', () => {
-            faq.classList.toggle('active');
-        });
-    });
-
-    function toggleAnswers() {
-        const showAnswersBtn = document.querySelector('.show-answers-btn');
-        const areAllActive = Array.from(faqs).every(faq => faq.classList.contains('active'));
-
-        if (areAllActive) {
-            faqs.forEach(faq => {
-                faq.classList.remove('active');
-            });
-            showAnswersBtn.textContent = 'Show Answers';
-        } else {
-            faqs.forEach(faq => {
-                faq.classList.add('active');
-            });
-            showAnswersBtn.textContent = 'Hide Answers';
-        }
-    }
     function msg() {
         alert('Successfully Loggedin')
     }
     function create() {
         alert('Successfully Created Account')
     }
-    function welcome(){
-        alert('Welcome to watchWave😍');
+
+    function light() {
+        const light = document.getElementById('body')
+        light.classList.remove('body-light');
+        light.classList.add('body-dark');
     }
-    function theme(){
-        const color=document.getElementById('body')
-if(color==='body-light')  
-{
-    const light=document.getElementById('body')
-    light.classList.remove('body-light');
-    light.classList.add('body-dark');
-}
-else
-{
-    const light=document.getElementById('body')
-    light.classList.remove('body-dark');
-    light.classList.add('body-light');
-}
-}
+    function dark() {
+        const light = document.getElementById('body')
+        light.classList.remove('body-dark');
+        light.classList.add('body-light');
+    }
+    function change() {
+        var button = document.getElementById("ansbtn");
+        if (button.textContent === "Hide Answers") {
+            button.textContent = "show Answers";
+        } else {
+            button.textContent = "Hide Answers"
+        }
+    }
+
+
 </script>
-</script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </html>

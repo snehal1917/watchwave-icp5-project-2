@@ -24,7 +24,7 @@
 
 .butn
 {
-    width:430px;
+    width:420px;
     margin-left: 20px;
 }
 
@@ -34,10 +34,29 @@
    margin: 50px;
 }
 
-scrol{
-    overflow: scroll;
-}
-
 .fm{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.peterimg
+{
+    height: 600px;
+    width: 390px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.vid
+{
+    margin: 30px;
+    padding: 10px;
+}
+.pandaimg
+{
+    height: 660px;
+    margin: 30px;
+}
+.pandabutn
+{
+    margin-left: 30px;
+    width:420px;
+    
 }
