@@ -72,9 +72,6 @@ background-color: #0056b3;
 .modal-dialog{
     opacity: 1.5;
 }
-.place::placeholder{
-color: #ccc;
-}
 .body-dark{
     background-color: #00050d;
     color: white;
@@ -86,4 +83,29 @@ color: #ccc;
 }
 .body-light .textlight{
    color: #00050d;
+}
+.card-l{
+    background-color: white;
+    color: black;
+}
+.m-color{
+    color: black;
+}
+.body-light .modal-body{
+    background-color: black;
+    color: white;
+}
+.body-light .card-l{
+    background-color: black;
+    color: white;
+}
+.body-light .m-color{
+    background-color: black;
+    color: white;
+}
+.body-light .modal-header{
+    background-color: black;
+}
+.body-light .modal-footer{
+    background-color: black;
 }
