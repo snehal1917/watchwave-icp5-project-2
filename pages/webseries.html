@@ -11,7 +11,15 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body class="body">
+<body class="body" id="DarkMode">
+
+  <button class="NavName ulmarleft lightbtn" style="border-style: 1px #ffebe8;" onclick="Light()">
+    light
+  </button>
+  <button class="NavName ulmarleft2 lightbtn" onclick="Dark()">
+    dark
+  </button>
+
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -188,19 +196,19 @@
     <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
       <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
       <label class="btn btn-outline-primary" for="btnradio1"><a href="#thril"><span
-            class="text-light">Thriller🧵</span></a></label>
+            class="">Thriller🧵</span></a></label>
 
       <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-      <label class="btn btn-outline-primary" for="btnradio2"><a href="#act"><span class="text-light">
+      <label class="btn btn-outline-primary" for="btnradio2"><a href="#act"><span class="">
             Action🎬</span></a></label>
 
       <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-      <label class="btn btn-outline-primary" for="btnradio3"><a href="#romanticc"><span class="text-light">
+      <label class="btn btn-outline-primary" for="btnradio3"><a href="#romanticc"><span class="">
             Romantic🌹</span></a></label>
     </div>
   </div>
 
-  <p class="fs-3 text-light ms-5 pt-5 fm" id="thril"> Experience By Thriller🧵</p>
+  <p class="fs-3 ms-5 pt-5 fm" id="thril"> Experience By Thriller🧵</p>
 
   <div class="row">
     <img src="./../img/webseries/watchhh.jpg" class="img-fluid col-lg-2 mt-3 transform" alt="...">
@@ -212,7 +220,7 @@
     <img src="./../img/webseries/Farzi-4.webp" class="img-fluid col-lg-2  mt-3 transform" alt="...">
   </div>
 
-  <p class="fs-3 text-light ms-5 pt-5 fm" id="act"> Trending Action Web Series🎬</p>
+  <p class="fs-3 ms-5 pt-5 fm" id="act"> Trending Action Web Series🎬</p>
 
 
 
@@ -234,7 +242,7 @@
 
 
 
-  <p class="fs-3 text-light ms-5 pt-5 fm" id="romanticc"> Must Watched Romantic Series🌹</p>
+  <p class="fs-3 ms-5 pt-5 fm" id="romanticc"> Must Watched Romantic Series🌹</p>
 
   <div class="row">
     <img src="./../img/webseries/flame.jpg" class="img-fluid col-lg-2 mt-3 transform" alt="...">
@@ -252,12 +260,12 @@
 
 
   <div class="text-center">
-         <button onclick="toggle()" class="btn btn-warning mt-5 text-center">Show
-        More...</button>
+    <button onclick="toggle()" id="showMoreBtn" class="btn btn-warning mt-5 text-center">Show
+      More...</button>
 
   </div>
-  <div id="hideele">
-    <p class="fs-3 text-light ms-5 pt-5 fm" id="thril"> Are You Interested In Horrer?🤔</p>
+  <div id="hideele" id="hidden">
+    <p class="fs-3 ms-5 pt-5 fm" id="thril"> Are You Interested In Horrer?🤔</p>
 
     <div class="row">
       <img src="./../img/webseries/watchhh.jpg" class="img-fluid col-lg-2 mt-3 transform" alt="...">
@@ -269,7 +277,7 @@
       <img src="./../img/webseries/Farzi-4.webp" class="img-fluid col-lg-2  mt-3 transform" alt="...">
     </div>
 
-    <p class="fs-3 text-light ms-5 pt-5 fm" id="act"> Trending In Marathi😎</p>
+    <p class="fs-3 ms-5 pt-5 fm" id="act"> Trending In Marathi😎</p>
 
     <div class="row">
       <img src="./../img/webseries/MaiHero-Boll-Raha-Hu.jpg" class="img-fluid col-lg-2 mt-3 transform" alt="...">
@@ -281,7 +289,7 @@
       <img src="./../img/webseries/thecasino.jpg" class="img-fluid col-lg-2  mt-3 transform" alt="...">
     </div>
 
-    <p class="fs-3 text-light ms-5 pt-5 fm" id="romanticc"> Comedy☄️</p>
+    <p class="fs-3 ms-5 pt-5 fm" id="romanticc"> Comedy☄️</p>
 
     <div class="row">
       <img src="./../img/webseries/flame.jpg" class="img-fluid col-lg-2 mt-3 transform" alt="...">
@@ -293,6 +301,8 @@
 
       <img src="./../img/webseries/Guturgu.avif" class="img-fluid col-lg-2  mt-3 transform" alt="...">
     </div>
+
+
   </div>
 
   <p class="fs-2 text-warning text-center pt-5 fm">Top Global Studios🎙️</p>
@@ -314,28 +324,41 @@
 
     </div>
 
+
   </div>
 
 
   <script>
+    
+    var x = document.getElementById("hideele");
+    var showMoreBtn = document.getElementById("showMoreBtn");
 
-    function toggle() {
-      var x = document.getElementById("hideele");
-
-      if(x.style.display=== "none"){
-        x.style.display  = "block";
-      }
-      else{
+    function toggleContent() {
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        showMoreBtn.textContent = "Show Less...";
+      } else {
         x.style.display = "none";
+        showMoreBtn.textContent = "Show More...";
+      }
+    }
+
+    showMoreBtn.addEventListener("click", toggleContent);
+
+
+
+    
+  
+  function Light() {
+        const Element = document.getElementById("DarkMode");
+        Element.className = "body";
       }
 
-
-    }
-  </script>
-
-
-
-
+      function Dark() {
+        const Element = document.getElementById("DarkMode");
+        Element.className = "Dark";
+      }
+</script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
