@@ -41,3 +41,18 @@ padding: 10px;
 margin-right: 10px;
 margin-bottom: 60px;
 }
+.btn-on{
+  width: 100px;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+}
+
+.b-dark{
+  background-color: #060d17;
+  color: white;
+}
+.b-light{
+  background-color: white;
+  color: black;
+}
