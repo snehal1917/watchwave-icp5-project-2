@@ -11,40 +11,38 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../css/tollywood.css">
+    <script src="./../javascript.js"></script>
 </head>
 
-<body class="bg-black">
-    <div class="slide">
-        <h1 class="text-white text-center">Bahubali-The Conclusion</h1>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../../img/tollywood/bahubalislide1.jpg" class="d-block w-100 slideimage" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../../img/tollywood/bahubalislide2.jpg" class="d-block w-100 slideimage" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../../img/tollywood/bahubalislide3.jpg" class="d-block w-100 slideimage" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+<body class="bg-black" id="bodymode">
+    <img src="../../img/tollywood/darkmode.png" class="modebutton" onclick="darkmode()"> <img src="../../img/tollywood/lightmode.png" class="modebutton" onclick="lightmode()">
+    <h1 class="text-white text-center" id="textmode">Bahubali</h1>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../../img/tollywood/bahubalislide1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../../img/tollywood/bahubalislide2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../../img/tollywood/bahubalislide3.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
-    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     <div class=" row m-5">
         <div class="  my-2 col-xl-3 col-xxl-3 col-md-3 col-lg-4 col-sm-4 col-xs-12 poster">
             <img src="./../../img/tollywood/bahubali.jpg" class="img-fluid">
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-8 bg-black">
             <div>
                 <h class="text-dark-emphasis fw-bold">SYNOPSIS</h>
                 <p class="text-secondary fw-normal">To avenge his father's death, a young man leads an army into battle
