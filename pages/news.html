@@ -6,10 +6,114 @@
         <title> News Channels</title>
         <link rel="stylesheet" href="./../css/news.css">
         <script src="https://kit.fontawesome.com/06b798522f.js" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    </head>
-    <body class="body">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+      @media(min-width:765px)
+      {
+        .mobile{
+        display:none;
+      }
+
+      }
+      @media(max-width:765px)
+      {
+        .desktop{
+        display:none;
+      }
+
+      }
+     
+    </style>
+   </head>
+    <body class="body" id="DarkMode">
+      
+    <nav class="navbar navbar-expand-md bg-body-tertiary bg-dark  navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="#">
+          <img src="./../img/webseries/logo.png" width="120px" height="50px" alt="" srcset="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <button class="btn text-white me-3 mobile float-end" type="submit"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="bi bi-person-square text-white fs-3"></i></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link ms-5  text-light" aria-current="page" href="./../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="/pages/tvshows.html">TV Shows</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Movies
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/pages/holly.html">Hollywood</a></li>
+                <li><a class="dropdown-item" href="/pages/bollywood/bollywood.html">Bollywood</a></li>
+                
+                <li><a class="dropdown-item" href="/pages/Tollywoodcinema.html">Tollywood</a></li>
+              </ul>
+            </li> 
+           
+            <li class="nav-item">
+              <a class="nav-link text-light" href="/pages/webseries.html">Web Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="/pages/cartoon.html">Cartoon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="/pages/news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="/pages/songs.html">Songs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="/pages/about.html">About Us</a>
+            </li>
+            
+            
+          </ul>
+          <form class="d-flex me-2" role="search">
+            <input class="mt-2 form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn text-white me-3 mt-2" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+          <button  class="  NavName ulmarleft rounded-3 mt-2 lightbtn" style="border-style: 1px #ffebe8;" onclick="Light()">
+            Dark <i class="fa-solid fa-moon fa-lg"></i>
+          </button>
+          <button class="NavName   ms-2 rounded-3 mt-2 ulmarleft2 lightbtn" onclick="Dark()">
+            Light <i class="fa-regular fa-moon fa-lg"></i>
+          </button>
+          <button class="btn text-white me-2 mt-2  desktop" type="submit"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="bi bi-person-square text-white fs-3"></i></button>
+         
+        
+        </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-end  text-bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="bi bi-person-square text-white fs-3 me-2"></i></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+       <div>
+        <button class="btn"><h6 class="text-white">Sign Up</h5></button>
+       </div>
+       <hr class="text-white">
+       <div>
+        <button class="btn"><h6 class="text-white">Subscribe Now</h5></button>
+        
+       </div>
+       <hr class="text-white">
+       <div>
+        <button class="btn"><h6 class="text-white">Help & Legal</h5></button>
+       
+       </div>
+      </div>
+    </div>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">  
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -61,7 +165,7 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-<p class="fs-3 text-light ms-5 pt-5 fm">Free Live News Channels</p>
+<p class="fs-3 ms-5 pt-5 fm">Free Live News Channels</p>
 <div class="container">
   <div class="row">
     <div class="card bg-dark col-sm-10  col-md-5 mt-5 mq" style="width: 18rem;">
@@ -70,7 +174,7 @@
         <h5 class="card-title text-light">Aaj Tak</h5>
       </div>
       <div class="card-body">
-        <a href="#" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
+        <a href="#section1" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
             Watch Now</button></a>
         <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
       </div>
@@ -82,7 +186,7 @@
         <h5 class="card-title text-light">Zee News</h5>
       </div>
       <div class="card-body">
-        <a href="#" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
+        <a href="#section1" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
             Watch Now</button></a>
         <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
       </div>
@@ -94,7 +198,7 @@
         <h5 class="card-title text-light">India Today</h5>
       </div>
       <div class="card-body">
-        <a href="#" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
+        <a href="#section1" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
             Watch Now</button></a>
         <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
       </div>
@@ -106,7 +210,7 @@
         <h5 class="card-title text-light">TV9 Marathi</h5>
       </div>
       <div class="card-body">
-        <a href="#" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
+        <a href="section1" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
             Watch Now</button></a>
         <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
       </div>
@@ -117,7 +221,7 @@
         <h5 class="card-title text-light">ABP News</h5>
       </div>
       <div class=" card-body">
-        <a href="#" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
+        <a href="#section1" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
             Watch Now</button></a>
         <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
       </div>
@@ -129,7 +233,7 @@
         <h5 class="card-title text-light">DD News</h5>
       </div>
       <div class="card-body">
-        <a href="#" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
+        <a href="#section1" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
             Watch Now</button></a>
         <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
       </div>
@@ -141,7 +245,7 @@
         <h5 class="card-title text-light">India TV</h5>
       </div>
       <div class="card-body">
-        <a href="#" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
+        <a href="#section1" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
             Watch Now</button></a>
         <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
       </div>
@@ -153,16 +257,22 @@
         <h5 class="card-title text-light">Times Now</h5>
       </div>
       <div class="card-body">
-        <a href="#" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
+        <a href="section1" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
             Watch Now</button></a>
-        <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+       
+       <div class="card-link"><button class="btn btn-outline-primary">Share</button>
+         <a href="#"><i class="fa-brands fa-facebook icons"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram icons"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin icons"></i></a>
+         <a href="#"><i class="fa-brands fa-square-twitter icons"></i></a>
       </div>
     </div>
 
   </div>
 </div>
+</div>
 
-<p class="fs-3 text-light ms-5 pt-5 fm" id="thril" > Live Entertainment Channels</p>
+<p class="fs-3 ms-5 pt-5 fm" id="thril" > Live Entertainment Channels</p>
  
 <div class="row">
 <img src="./../img/news/ZEE tv HD.jpg" class="img-fluid col-lg-2 mt-3 transform" alt="...">
@@ -186,7 +296,7 @@
 <img src="./../img/news/bruj ke gopal.jpg" class="img-fluid col-lg-2  mt-3 transform" alt="...">
 </div>
 <div class="row container">
-  <h3 class="fs-3 text-light ms-5 pt-5 fm">Must Watch Videos : News Channels</h3>
+  <h3 class="fs-3 ms-5 pt-5 fm">Must Watch Videos : News Channels</h3>
   <div class="col-md-12 ms-2 ">
       <a href="#" class=" d-md-flex justify-content-center ">
           <div class="col-md-2 col-12 mt-md-5">
@@ -216,7 +326,7 @@
       </a>
   </div>
 </div>
-<p class="fs-3 text-light ms-5 pt-5 fm">Browse by Genre</p>
+<p class="fs-3 ms-5 pt-5 fm">Browse by Genre</p>
 <div class="container">
   <div class="row ms-3">
     <div class="card bg-dark col-sm-10 row-cols-md-5 mt-5 mq" style="width: 17rem;">
@@ -281,7 +391,7 @@
   </div>
 </div>
 
-<p class="fs-3 text-light ms-5 pt-5 fm">Today's Headlines</p>
+<p class="fs-3 ms-5 pt-5 fm" id="section1">Today's Headlines</p>
 <div class="container">
   <div class="row row-cols-4 ms-2">
     <div class="card bg-dark col-sm-10  col-md-5 mt-5 mq" style="width: 18rem;">
@@ -393,7 +503,7 @@
      </div>
 </div>
 
-<p class="fs-3 text-light ms-5 pt-5 fm">Watch In Your Language</p>
+<p class="fs-3 ms-5 pt-5 fm">Watch In Your Language</p>
 <div class=" row container">
   <div class="col-md-12 ms-5 d-md-flex justify-content-center">
     <div class="col-md-2 col-12 mt-5"><img src="./../img/news/marathi.jpg" class="m-2 rounded-3" style="width: 12rem;" alt="..."></div>
@@ -404,12 +514,99 @@
     <div class="col-md-2 col-12 mt-5"><img src="./../img/news/malyalam.jpg" class="m-2 rounded-3" style="width: 12rem;" alt="..."></div>
   </div>
 </div>
+</div>
+<div class=" mt-5 font-monospace " style="background-color: #0b1120;">
+    
+  <div class="row ">
+      <div class="col-md-6">
+          <div class="row mt-1">
+          <div class="col-md-4 ms-5">
+              <img src="./../img/webseries/logo.png" height="70px" width="120px"/>
+              <h3 class="text-warning fs-4 mt-2">Watch Wave</h3>
+              <ul>
+                 <li class="text-white mt-2"><a href="http://" class="text-white text-decoration-none">Home</a></li>
+                 <li class="text-white"><a href="http://" class="text-white text-decoration-none">Tv Shows</a></li>
+                 <li class="text-white"><a href="http://" class="text-white text-decoration-none">Webseries</a></li>
+                 <li class="text-white"><a href="http://" class="text-white text-decoration-none">Movies</a></li>
+                 
+              </ul>
+          </div>
+          <div class="col-md-4">
+              <h3 class="text-white font-monospace mt-5">Support</h3>
+              <ul>
+                  <li class="text-white" ><a href="http://" class="text-white text-decoration-none">Help Center</a></li>
+                  <li class="text-white"><a href="http://" class="text-white text-decoration-none">Terms Of Use</a></li>
+                  <li class="text-white"><a href="http://" class="text-white text-decoration-none">Privacy Policy</a></li>
+                  <li class="text-white"><a href="http://" class="text-white text-decoration-none">Content Complaints</a></li>
+                  
+                  
+              </ul>
+          </div>
+          </div>
+
+      </div>
+      <div class="col-md-6 ">
+          <div class="row">
+              <div class="col-md-6">
+                 <h2 class="text-white mt-5 font-monospace">Connect with us</h2> 
+                 <div class="d-flex">
+               <a href="" class="text-white text-decoration-none ms-3"><i class="bi bi-instagram fs-1 text-white me-4"></i></a>
+               <a href="" class="text-white text-decoration-none"><i class="bi bi-facebook fs-1 text-white me-4"></i></a>
+               <a href="" class="text-white text-decoration-none"><i class="bi bi-youtube fs-1 text-white me-4"></i></a>
+               <a href="" class="text-white text-decoration-none"><i class="bi bi-twitter fs-1 text-white me-4"></i></a>
+               
+
+                 </div>
+              </div>
+              <div class="col-md-6">
+                  <h2 class="text-white mt-5 font-monospace">Download the App</h2> 
+                  <div class="d-flex">
+
+                  <img src="./../img/webseries/gpay.png" height="50px" alt="" srcset="">
+                  <img src="./../img/webseries/appstore.png" height="50px" alt="" srcset="">
+                  </div>
+              </div>
+          </div>
+
+      </div>
+
+
+
+      
+
+  </div>
+  
+
+</div>
+<hr>
+<div class="container-fluid">
+  <div class="row">
+
+  </div>
+</div>
 
 
 
 
+<script>
 
-         
+
+function Light() {
+  const Element = document.getElementById("DarkMode");
+  Element.className = "body";
+}
+
+function Dark() {
+  const Element = document.getElementById("DarkMode");
+  Element.className = "Dark";
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+</script>
+
+        
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 crossorigin="anonymous"></script> 
