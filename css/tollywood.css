@@ -24,3 +24,10 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 40px;
 }
+.modebutton{
+  height: 50px;
+  margin: 3px;
+}
+.modechange{
+  background-color: #404040;
+}
