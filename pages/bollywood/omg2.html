@@ -6,18 +6,23 @@
     <title>OMG 2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/61d1b80f50.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./../../css/bollywood.css"/>
 </head>
 <style>
     
    
 </style>
-<body class="">
+<body class="" id="body">
+  <div class="d-flex justify-content-end">
+    <button class="btn-on my-4 mx-2" id="btn-on" onclick=" darktheme()">dark <i class="fa-solid fa-moon fa-lg"></i></button>
+    <button class="btn-on my-4 mx-2 me-4" id="btn-on" onclick="lighttheme()">light <i class="fa-regular fa-moon fa-lg"></i></button>
+</div>
     <div class="card  bg-img">
     <img src="https://www.livemint.com/lm-img/img/2023/07/11/1600x900/F0vbj9-aEAAamWQ_1689062929453_1689062943099.jpg" class="card-img " style="height:46vw; opacity: 0.2;" alt="...">
     <div class="card-img-overlay icon-div">
       <a class="text-decoration-none" href="#youtubevideo">
-        <h1 class="img-iconplay text-light"><b>OMG 2</b> <br><br> <i class="fa-solid fa-circle-play fa-2xl m-5" style="color: #e0492e;"></i></h1>
+        <h1 class="img-iconplay text-light"><b>OMG 2</b> <br><br> <i class="fa-solid fa-circle-play fa-2xl m-5 text-warning" ></i></h1>
        </a>
         
        
@@ -42,34 +47,8 @@
       </div>
       
        <!-- 0000 -->
-       <button type="button" class="btn text-light bg-secondary w-100 mt-5 " data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Sign in syne Watchlist</button>
-      
-       <div class="modal fade "  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-         <div class="modal-dialog" style="background-color: #6a7c8f;">
-           <div class="modal-content " style="background-color: #566b83;">
-             <div class="modal-header">
-               <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
-               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-             </div>
-             <div class="modal-body">
-               <form class=" " >
-                 <div class="mb-3">
-                   <label for="recipient-name" class="col-form-label">Recipient:</label>
-                   <input type="text" class="form-control" id="recipient-name">
-                 </div>
-                 <div class="mb-3">
-                   <label for="message-text" class="col-form-label">Message:</label>
-                   <textarea class="form-control" id="message-text"></textarea>
-                 </div>
-               </form>
-             </div>
-             <div class="modal-footer">
-               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-               <button type="button" class="btn btn-primary">Send message</button>
-             </div>
-           </div>
-         </div>
-       </div>
+       <button type="button" class="btn text-light bg-secondary w-100 mt-5 " onclick="watchlist()">Add Watchlist
+      </button>
        <!-- 00 -->
       </div>
       <div class="col-sm-8 row-lg-12 mt-5">
@@ -77,7 +56,7 @@
           <div class="col-11 col-sm-11 ">
             <div>
                 <div class="ad p-5">
-                    <h1 class="text-light"><b>OMG 2</b></h1> <span>(2023)</span> <br>
+                    <h1 class="text-warning"><b>OMG 2</b></h1> <span>(2023)</span> <br>
                     <span>original Title: ओएमजी २</span> <br>
                     <span>Watch Now</span> <br>
                     <span>
@@ -100,7 +79,7 @@
                               Free
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item " href="#"> Downlode</a></li>
+                              <li><a onclick=" Download()"  class="dropdown-item " href="#"> Download</a></li>
                             </ul>
                           </div>
                           <div class="btn-group">
@@ -108,7 +87,7 @@
                               SD
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"> Downlode</a></li>
+                              <li><a onclick=" Download()" class="dropdown-item" href="#"> Download</a></li>
                             </ul>
                           </div>
                           <div class="btn-group">
@@ -116,7 +95,7 @@
                               HD
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"> Downlode</a></li>
+                              <li><a onclick=" Download()" class="dropdown-item" href="#"> Download</a></li>
                             </ul>
                           </div>
                           <div class="btn-group">
@@ -124,7 +103,7 @@
                               4K
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"> Downlode</a></li>
+                              <li><a onclick=" Download()" class="dropdown-item" href="#"> Download</a></li>
                             </ul>
                           </div>
             
@@ -140,10 +119,10 @@
                     
                           <div class="text-start">
                             <span class="fs-5 tex-light fs-5 text-c">SYNOPSIS</span> </BR> <br>
-                            <h3 class=" fw-bold text-light"> </h3> <br> 
+                            <h3 class=" fw-bold text-light"> </h3>  
                                 <span>Life is bliss until one day Kanti Sharan Mudgal’s son Vivek is blamed for immoral conduct and expelled from school. Overwhelmed, Kanti plans to leave town until a divine intervention leads him to seek justice by taking those responsible to court. </span> <br> <br>
                                 <span class=" fs-5 text-c">OMG 2 STREAMING: WHERE TO WATCH ONLINE</span> <br> <br>
-                                <span> 2 is all set for its theatrical release on 11th August, 2023.</span> <br> <br>
+                                <span> omg 2 is all set for its theatrical release on 11th August, 2023.</span> <br> <br>
                                 <span class=" fs-5 text-c">WHERE TO WATCH</span> <br> <br>
                                 <span>OMG 2 is all set for its theatrical release on 11th August, 2023. </span> <br> <br>
                                 <span>We try to add new providers constantly but we couldn't find an offer for "OMG 2" online. Please come back again soon to check if there's something new.  </span> <br> <br>
@@ -178,34 +157,35 @@
     <div class="row">
       <div class="col-sm-4 col-11 tex text-start ">
         <span class="fs-5 text-c">WATCHWAVE DAILY STREAMING CHARTS</span> <br><br>
-        <span class="fw-bold" style="font-size: 50px; ">1</span>
-       <a class="text-decoration-none text-c" href=" ">
+
+         <span class="fw-bold" style="font-size: 50px; ">1</span>
+       <a class="text-decoration-none text-c" href="./adipurush.html">
         <img class="img-fluid " style="height: 80px;" src=" https://images.justwatch.com/poster/301409738/s592/adipurush"/>
         <span class="fs-5 p-3">Adipurush</span>
        </a> <br><br>
 
-       <span class="fw-bold" style="font-size: 50px; ">5</span>
-       <a class="text-decoration-none text-c" href=" ">
-        <img class="img-fluid " style="height: 80px;" src=" https://images.justwatch.com/poster/306048387/s592/the-kerala-story "/>
-        <span class="fs-5 p-3"> The Kerala Story</span>
-       </a> <br><br>
-
        <span class="fw-bold" style="font-size: 50px; ">2</span>
-       <a class="text-decoration-none text-c" href=" ">
+       <a class="text-decoration-none text-c" href="./gadar2.html">
         <img class="img-fluid " style="height: 80px;" src=" https://images.justwatch.com/poster/305659344/s592/gadar-ek-prem-katha"/>
         <span class="fs-5 p-3">Gadar Ek Prem Katha</span>
        </a> <br><br>
 
        <span class="fw-bold" style="font-size: 50px; ">3</span>
-       <a class="text-decoration-none text-c" href=" ">
-        <img class="img-fluid " style="height: 80px;" src="https://images.justwatch.com/poster/305412881/s592/por-thozhil"/>
-        <span class="fs-5 p-3">Por Thozhile</span>
+       <a class="text-decoration-none text-c" href="./omg2.html">
+        <img class="img-fluid " style="height: 80px;" src="https://images.justwatch.com/poster/305939637/s592/omg-2 "/>
+        <span class="fs-5 p-3">OMG 2</span>
        </a> <br><br>
 
        <span class="fw-bold" style="font-size: 50px; ">4</span>
-       <a class="text-decoration-none text-c" href=" ">
-        <img class="img-fluid " style="height: 80px;" src=" https://images.justwatch.com/poster/306314660/s592/lust-stories-2"/>
-        <span class="fs-5 p-3">Lust Stories 2</span>
+       <a class="text-decoration-none text-c" href="./bholaa.html">
+        <img class="img-fluid " style="height: 80px;" src=" https://images.justwatch.com/poster/305505012/s592/bholaa-2022"/>
+        <span class="fs-5 p-3">Bholaa</span>
+       </a> <br><br>
+
+       <span class="fw-bold" style="font-size: 50px; ">5</span>
+       <a class="text-decoration-none text-c" href="./satyapremkikatha.html">
+        <img class="img-fluid " style="height: 80px;" src=" https://images.justwatch.com/poster/305543092/s592/satyaprem-ki-katha"/>
+        <span class="fs-5 p-3"> SatyaPrem Ki Katha</span>
        </a> <br><br>
 
 
@@ -218,20 +198,20 @@
                   
                             
                   <span class="fs-5 text-c">WATCH TO KNOW</span><br><br>
-                  <h3 class="fw-bold text-light"><b>Sunny Deol & Ameesha Patel reunite on-screen after 22 years for OMG 2</b></h3> <br><br>
+                  <h3 class="fw-bold text-warning"><b>OMG 2 MOVIE</b></h3> <br><br>
                   <spa>OMG 2 is a Hindi period-drama action film directed and produced by Anil Sharma. Serving as a direct sequel to the 2001 film Gadar: Ek Prem Katha, the second most watched film in India since the 90s as per box office records. The film is set 25 years after the first film documenting the 1971 Crush India movement. Similar to the first film, the story of and screenplay of the film has been written by Shaktiman Talwar, and the cinematography has been handled by Najeeb Khan. <br><br>
 
                     Sunny Deol and Ameesha Patel return to play the role of the loveable interfaith couple Tara Singh and Sakeena in OMG 2. Former child-actor Utkarsh will also be seen making a comeback as Charanjeet, Singh family’s grown-up son. The highly anticipated sequel is all set to release in cinemas on 11th August, 2023. </spa><br><br>
                     <span class="fs-5 text-c">PRODUCTION NEWS</span><br><br>
-                    <span class="text-c">2021-10-15</span><br><br>
+                    <span class="text-c"><i class="fa-regular fa-calendar-days fa-lg"></i> 2021-10-15</span><br><br>
                     <span>Anil Sharma breaks the news of a Gadar sequel by releasing the title poster for the much awaited movie on Twitter. (Source: Twitter)  </span> <br><br>
-                    <span class="text-c">2021-11-3</span><br><br>
+                    <span class="text-c"><i class="fa-regular fa-calendar-days fa-lg"></i> 2021-11-3</span><br><br>
                     <span> Sunny Deol shares a picture of him sipping tea with director Anil Sharma on the sets of Gadar 2, confirming that production for the movie has begun. (Source: Instagram)</span><br><br>
-                    <span class="text-c">2022-03-03</span> <br><br>
+                    <span class="text-c"><i class="fa-regular fa-calendar-days fa-lg"></i> 2022-03-03</span> <br><br>
                     <span>Sunny Deol shares the first look of him reprising his role as Tara Singh after the long 22 year gap, and shares that the makers are planning on bringing back the iconic songs from the movie. (Source: Bollywood Hungama) </span> <br><br>
-                    <span  class="text-c">2023-01-03</span><br><br>
+                    <span  class="text-c"><i class="fa-regular fa-calendar-days fa-lg"></i> 2023-01-03</span><br><br>
                     <span>Zee Studios releases the teaser for the film which shows Tara Singh throwing a cartwheel and setting out on his journey to Lahore. (Source: Youtube)</span><br><br>
-                    <span  class="text-c">2023-01-11</span><br><br>
+                    <span  class="text-c"><i class="fa-regular fa-calendar-days fa-lg"></i> 2023-01-11</span><br><br>
                     <span> The film is given a release date of 11th August, 2023 to celebrate the 22nd anniversary of the first film which released on the same day back in 2001. (Source: Bollywood Hungama)  </span> <br><br>
                     <span></span> <br><br>
 
@@ -261,17 +241,44 @@
     <div class="scroll-container">
       
     <div class="d-flex">
-      <a class="text-decoration-none m-4" href=" ">
+     
+      <a class="text-decoration-none m-4" href="./gadar2.html">
         <div class="card" style="width: 16rem;">
-          <img src="https://images.justwatch.com/poster/301409738/s592/adipurush " class="card-img-top" alt="...">
+          <img src="https://images.justwatch.com/poster/302620751/s592/gadar-2 " class="card-img-top" alt="gadar">
         </div>
        </a>
-
-       <a class="text-decoration-none m-4" href="./gadar2.html">
+    
+      <a class="text-decoration-none m-4" href="./bholaa.html">
         <div class="card" style="width: 16rem;">
-          <img src="https://images.justwatch.com/poster/305659344/s592/gadar-ek-prem-katha " class="card-img-top" alt="...">
+          <img src="https://images.justwatch.com/poster/305505012/s592/bholaa-2022 " class="card-img-top" alt="bhola">
         </div>
        </a>
+    
+       <a class="text-decoration-none m-4" href="./omg2.html">
+        <div class="card" style="width: 16rem;">
+          <img src="https://images.justwatch.com/poster/305939637/s592/omg-2 " class="card-img-top" alt="omg 2">
+        </div>
+       </a>
+    
+      <a class="text-decoration-none m-4" href="./adipurush.html">
+        <div class="card" style="width: 16rem;">
+          <img src="https://images.justwatch.com/poster/301409738/s592/adipurush " class="card-img-top" alt="adipurush">
+        </div>
+       </a>
+      
+       <a class="text-decoration-none m-4" href="./satyapremkikatha.html">
+        <div class="card" style="width: 16rem;">
+          <img src="https://images.justwatch.com/poster/305543092/s592/satyaprem-ki-katha" class="card-img-top" alt="satya prem ki kayha">
+        </div>
+       </a>
+  
+       <a class="text-decoration-none m-4" href="./jugjuggjeeyo.html">
+        <div class="card" style="width: 16rem;">
+          <img src="https://images.justwatch.com/poster/277476027/s592/jug-jugg-jeeyo" class="card-img-top" alt="jug jugg jeeyo">
+        </div>
+       </a>
+      
+       
 
        <a class="text-decoration-none m-4" href=" ">
         <div class="card" style="width: 16rem;">
@@ -303,12 +310,37 @@
       <div class="card" style="width: 20rem;">
         <img src="https://i.ytimg.com/vi/x4oZQ8jMDaI/maxresdefault.jpg" class="card-img-top" alt="...">
       </div>
-      <span class="text-bold text-light fs-5">Independence Day Special: Fighter,<br> OMG 2,& The War drop new update</span>
+      <span class="text-bold text-secondary fs-5">Independence Day Special: Fighter,<br> OMG 2,& The War drop new update</span>
     </div>
  </div>
 </div>
 
    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
+<script>
+   function darktheme(){
+      const bodyelement =document.getElementById("body");
+      bodyelement.classList.remove('b-light');
+      bodyelement.classList.add('b-dark');
+      bodyelement.classList.add('text-light');
+      bodyelement.classList.remove('text-dark');
+  }
+  function lighttheme(){
+      const bodyelement =document.getElementById("body");
+      bodyelement.classList.remove('b-dark');
+      bodyelement.classList.add('b-light');
+      bodyelement.classList.remove('text-light');
+      bodyelement.classList.add('text-dark');
+  }
+
+  function watchlist()
+{
+    alert('Movie has been Added to Watchlist');
+}
+
+function  Download()
+{
+    alert('Downloading  Starting  ');
+}
+</script> 
 </body>
 </html>
