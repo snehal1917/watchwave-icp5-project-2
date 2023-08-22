@@ -109,3 +109,19 @@ background-color: #0056b3;
 .body-light .modal-footer{
     background-color: black;
 }
+
+@media(min-width:765px)
+{
+  .mobile{
+  display:none;
+}
+
+}
+@media(max-width:765px)
+{
+  .desktop{
+  display:none;
+}
+
+}
+
