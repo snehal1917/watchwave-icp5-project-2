@@ -6,17 +6,22 @@
     <title>satyaprem ki katha</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/61d1b80f50.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./../../css/bollywood.css"/>
 </head>
 <style>
    
 </style>
-<body class="">
+<body class="" id="body">
+  <div class="d-flex justify-content-end">
+    <button class="btn-on my-4 mx-2" id="btn-on" onclick=" darktheme()">dark <i class="fa-solid fa-moon fa-lg"></i></button>
+    <button class="btn-on my-4 mx-2 me-4" id="btn-on" onclick="lighttheme()">light <i class="fa-regular fa-moon fa-lg"></i></button>
+</div>
     <div class="card  bg-img">
     <img src="https://tse3.mm.bing.net/th?id=OIP.VAPol-Ev6ip__K0zecz-mwHaDt&pid=Api&P=0&h=180" class="card-img " style="height:46vw; opacity: 0.2;" alt="...">
     <div class="card-img-overlay icon-div">
        <a class="text-decoration-none" href="#youtubevideo">
-        <h1 class="img-iconplay text-light"><b class="-5">SATYAPREM KI KATHA</b> <br><br> <i class="fa-solid fa-circle-play fa-2xl m-5" style="color: #e0492e;"></i></h1>
+        <h1 class="img-iconplay text-light"><b class="-5">SATYAPREM KI KATHA</b> <br><br> <i class="fa-solid fa-circle-play fa-2xl m-5 text-warning" ></i></h1>
        </a>
         
         
@@ -41,34 +46,8 @@
       </div>
       
        <!-- 0000 -->
-       <button type="button" class="btn text-light bg-secondary w-100 mt-5 " data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Sign in syne Watchlist</button>
-      
-       <div class="modal fade "  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-         <div class="modal-dialog" style="background-color: #6a7c8f;">
-           <div class="modal-content " style="background-color: #566b83;">
-             <div class="modal-header">
-               <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
-               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-             </div>
-             <div class="modal-body">
-               <form class=" " >
-                 <div class="mb-3">
-                   <label for="recipient-name" class="col-form-label">Recipient:</label>
-                   <input type="text" class="form-control" id="recipient-name">
-                 </div>
-                 <div class="mb-3">
-                   <label for="message-text" class="col-form-label">Message:</label>
-                   <textarea class="form-control" id="message-text"></textarea>
-                 </div>
-               </form>
-             </div>
-             <div class="modal-footer">
-               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-               <button type="button" class="btn btn-primary">Send message</button>
-             </div>
-           </div>
-         </div>
-       </div>
+       <button type="button" class="btn text-light bg-secondary w-100 mt-5 " onclick="watchlist()">Add Watchlist
+      </button>
        <!-- 00 -->
       </div>
       <div class="col-sm-8 row-lg-12 mt-5">
@@ -76,7 +55,7 @@
           <div class="col-11 col-sm-11 ">
             <div>
                 <div class="ad p-5">
-                    <h1 class="text-light"><b>SATYAPREM KI KATHA </b></h1> <span>(2023)</span> <br>
+                    <h1 class="text-warning"><b>SATYAPREM KI KATHA </b></h1> <span>(2023)</span> <br>
                     <span>original Title: सत्यप्रेम की कथा </span> <br>
                     <span>Watch Now</span> <br>
                     <span>
@@ -99,7 +78,7 @@
                               Free
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item " href="#"> Downlode</a></li>
+                              <li><a onclick=" Download()" class="dropdown-item " href="#"> Download</a></li>
                             </ul>
                           </div>
                           <div class="btn-group">
@@ -107,7 +86,7 @@
                               SD
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"> Downlode</a></li>
+                              <li><a onclick=" Download()" class="dropdown-item" href="#"> Download</a></li>
                             </ul>
                           </div>
                           <div class="btn-group">
@@ -115,7 +94,7 @@
                               HD
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"> Downlode</a></li>
+                              <li><a onclick=" Download()" class="dropdown-item" href="#"> Download</a></li>
                             </ul>
                           </div>
                           <div class="btn-group">
@@ -123,7 +102,7 @@
                               4K
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#"> Downlode</a></li>
+                              <li><a onclick=" Download()" class="dropdown-item" href="#"> Download </a></li>
                             </ul>
                           </div>
             
@@ -139,7 +118,7 @@
                     
                           <div class="text-start">
                             <span class="fs-5 tex-light fs-5 text-c">SYNOPSIS</span> </BR> <br>
-                            <h3 class=" fw-bold text-light">SatyaPrem Ki Katha: A boy next-door romance with a musical take. </h1> <br> <br>
+                            <h3 class=" fw-bold text-secondary">SatyaPrem Ki Katha: A boy next-door romance with a musical take. </h1> <br> <br>
                                 <span>Sparks fly when Satyaprem, a Gujarati boy next-door desperate to tie the knot lays his eyes on the town's most beautiful girl, Katha. This musical rom-com tells the story of their rollercoaster romance as their love deepens.  
                                 </span> <br> <br>
                                 <span class=" fs-5 text-c">WHERE TO WATCH</span> <br> <br>
@@ -176,34 +155,35 @@
     <div class="row">
       <div class="col-sm-4 col-11 tex text-start ">
         <span class="fs-5 text-c">WATCHWAVE DAILY STREAMING CHARTS</span> <br><br>
+
         <span class="fw-bold" style="font-size: 50px; ">1</span>
-       <a class="text-decoration-none text-c" href=" ">
+       <a class="text-decoration-none text-c" href="./adipurush.html">
         <img class="img-fluid " style="height: 80px;" src=" https://images.justwatch.com/poster/301409738/s592/adipurush"/>
         <span class="fs-5 p-3">Adipurush</span>
        </a> <br><br>
 
-       <span class="fw-bold" style="font-size: 50px; ">5</span>
-       <a class="text-decoration-none text-c" href=" ">
-        <img class="img-fluid " style="height: 80px;" src=" https://images.justwatch.com/poster/306048387/s592/the-kerala-story "/>
-        <span class="fs-5 p-3"> The Kerala Story</span>
-       </a> <br><br>
-
        <span class="fw-bold" style="font-size: 50px; ">2</span>
-       <a class="text-decoration-none text-c" href=" ">
+       <a class="text-decoration-none text-c" href="./gadar2.html">
         <img class="img-fluid " style="height: 80px;" src=" https://images.justwatch.com/poster/305659344/s592/gadar-ek-prem-katha"/>
         <span class="fs-5 p-3">Gadar Ek Prem Katha</span>
        </a> <br><br>
 
        <span class="fw-bold" style="font-size: 50px; ">3</span>
-       <a class="text-decoration-none text-c" href=" ">
-        <img class="img-fluid " style="height: 80px;" src="https://images.justwatch.com/poster/305412881/s592/por-thozhil"/>
-        <span class="fs-5 p-3">Por Thozhile</span>
+       <a class="text-decoration-none text-c" href="./omg2.html">
+        <img class="img-fluid " style="height: 80px;" src="https://images.justwatch.com/poster/305939637/s592/omg-2 "/>
+        <span class="fs-5 p-3">OMG 2</span>
        </a> <br><br>
 
        <span class="fw-bold" style="font-size: 50px; ">4</span>
-       <a class="text-decoration-none text-c" href=" ">
-        <img class="img-fluid " style="height: 80px;" src=" https://images.justwatch.com/poster/306314660/s592/lust-stories-2"/>
-        <span class="fs-5 p-3">Lust Stories 2</span>
+       <a class="text-decoration-none text-c" href="./bholaa.html">
+        <img class="img-fluid " style="height: 80px;" src=" https://images.justwatch.com/poster/305505012/s592/bholaa-2022"/>
+        <span class="fs-5 p-3">Bholaa</span>
+       </a> <br><br>
+
+       <span class="fw-bold" style="font-size: 50px; ">5</span>
+       <a class="text-decoration-none text-c" href="./satyapremkikatha.html">
+        <img class="img-fluid " style="height: 80px;" src=" https://images.justwatch.com/poster/305543092/s592/satyaprem-ki-katha"/>
+        <span class="fs-5 p-3"> SatyaPrem Ki Katha</span>
        </a> <br><br>
 
 
@@ -216,28 +196,28 @@
                   
                             
                   <span class="fs-5 text-c">WATCH TO KNOW</span><br><br>
-                  <h3 class="fw-bold text-light"><b>Kartik Aaryan & Kiara Advani pair up for Nadiadwala's next romantic drama  SatyaPrem Ki Katha </b></h3> <br><br>
+                  <h3 class="fw-bold text-warning"><b> SatyaPrem Ki Katha movie</b></h3> <br><br>
                   <spa>SatyaPrem Ki Katha is a romantic musical jointly produced under the banner of Nadiadwala Grandson Entertainment and Namah Pictures. Director Sameer Vidwans known for his work on the National Award Winning film Anandi Gopal comes onboard to direct this romantic drama. The films score is handled by esteemed Bollywood singer Sunidhi Chauhan's husband Hitesh Sonik.  <br><br>
 
                     Bollywood's leading celebrities Kartik Aaryan and Kiara Advani star in the titular roles of SatyaPrem and Katha. This is the first time the duo will be seen sharing the screen together after their blockbuster appearance in Bhool Bhulaiyaa 2.  </spa><br><br>
                     <span class="fs-5 text-c">PRODUCTION NEWS</span><br><br>
-                    <span class="text-c">23 june 2021</span><br><br>
+                    <span class="text-c"><i class="fa-regular fa-calendar-days fa-lg"></i> 23 june 2021</span><br><br>
                     <span>Producer Sajid Nadiadwala confirms that he's working on a film starring Kartik Aaryan. (Source: Bollywood Hungama) </span> <br><br>
-                    <span class="text-c">3 August 2021</span><br><br>
+                    <span class="text-c"> <i class="fa-regular fa-calendar-days fa-lg"></i> 3 August 2021</span><br><br>
                     <span> Kiara Advani is locked to play Kartik Aaryan's love interest in the upcoming film. (Source: Pinkvilla)</span><br><br>
-                    <span class="text-c">1 November 2021</span> <br><br>
+                    <span class="text-c"> <i class="fa-regular fa-calendar-days fa-lg"></i> 1 November 2021</span> <br><br>
                     <span>Producer Sajid Nadiadwala signs a 5 film deal with Amazon Prime which includes the OTT streaming rights for SatyaPrem Ki Katha. (Source: Bollywood Hungama) </span> <br><br>
-                    <span  class="text-c">3 September 2022</span><br><br>
+                    <span  class="text-c"> <i class="fa-regular fa-calendar-days fa-lg"></i> 3 September 2022</span><br><br>
                     <span>Zee Studios releases the teaser for the film which shows Tara Singh throwing a cartwheel and setting out on his journey to Lahore. (Source: Youtube)</span><br><br>
-                    <span  class="text-c">29 April 2023</span><br><br>
+                    <span  class="text-c"><i class="fa-regular fa-calendar-days fa-lg"></i> 29 April 2023</span><br><br>
                     <span> Kiara Advani wraps up filming for the romantic drama, and shares BTS photos with fans. (Source: Instagram) </span> <br><br>
-                    <span  class="text-c">18 May 2023</span><br><br>
+                    <span  class="text-c"> <i class="fa-regular fa-calendar-days fa-lg"></i> 18 May 2023</span><br><br>
                     <span> The teaser for the film is released, giving fans their first look into the whirlwind Gujarati romance between Satya and Katha, and introducing us to  their grand families. (Source: Youtube) </span> <br><br>
-                    <span  class="text-c">5 June 2023</span><br><br>
+                    <span  class="text-c"> <i class="fa-regular fa-calendar-days fa-lg"></i> 5 June 2023</span><br><br>
                     <span> The full-length trailer for the film is released, it shows glimpses of Kartik Aaryan's introductory song which had a reported budget of over 7 crores. (Source: Youtube) </span> <br><br>
-                    <span  class="text-c">21 June 2023</span><br><br>
+                    <span  class="text-c"> <i class="fa-regular fa-calendar-days fa-lg"></i> 21 June 2023</span><br><br>
                     <span> The movie's lead garba track 'Sun Sajni' is released. This is the first time Kiara Advani is seen performing garba barefoot in a movie. (Source: Instagram) </span> <br><br>
-                    <span  class="text-c">29 June 2023</span><br><br>
+                    <span  class="text-c"><i class="fa-regular fa-calendar-days fa-lg"></i> 29 June 2023</span><br><br>
                     <span> SatyaPrem Ki Katha released in cinemas. (Source: BookMyShow)  </span> <br><br>
 
 
@@ -267,9 +247,40 @@
     <div class="scroll-container">
       
     <div class="d-flex">
-      <a class="text-decoration-none m-4" href=" ">
+
+       <a class="text-decoration-none m-4" href="./gadar2.html">
         <div class="card" style="width: 16rem;">
-          <img src="https://images.justwatch.com/poster/301409738/s592/adipurush " class="card-img-top" alt="...">
+          <img src="https://images.justwatch.com/poster/302620751/s592/gadar-2 " class="card-img-top" alt="gadar">
+        </div>
+       </a>
+    
+      <a class="text-decoration-none m-4" href="./bholaa.html">
+        <div class="card" style="width: 16rem;">
+          <img src="https://images.justwatch.com/poster/305505012/s592/bholaa-2022 " class="card-img-top" alt="bhola">
+        </div>
+       </a>
+    
+       <a class="text-decoration-none m-4" href="./omg2.html">
+        <div class="card" style="width: 16rem;">
+          <img src="https://images.justwatch.com/poster/305939637/s592/omg-2 " class="card-img-top" alt="omg 2">
+        </div>
+       </a>
+    
+      <a class="text-decoration-none m-4" href="./adipurush.html">
+        <div class="card" style="width: 16rem;">
+          <img src="https://images.justwatch.com/poster/301409738/s592/adipurush " class="card-img-top" alt="adipurush">
+        </div>
+       </a>
+      
+       <a class="text-decoration-none m-4" href="./satyapremkikatha.html">
+        <div class="card" style="width: 16rem;">
+          <img src="https://images.justwatch.com/poster/305543092/s592/satyaprem-ki-katha" class="card-img-top" alt="satya prem ki kayha">
+        </div>
+       </a>
+  
+       <a class="text-decoration-none m-4" href="./jugjuggjeeyo.html">
+        <div class="card" style="width: 16rem;">
+          <img src="https://images.justwatch.com/poster/277476027/s592/jug-jugg-jeeyo" class="card-img-top" alt="jug jugg jeeyo">
         </div>
        </a>
 
@@ -309,13 +320,38 @@
       <div class="card" style="width: 20rem;">
         <img src="https://www.iwmbuzz.com/wp-content/uploads/2023/06/witness-the-biggest-prem-katha-of-the-year-with-kartik-aaryan-and-kiara-advani-in-sun-sajni-from-satyaprem-ki-katha.jpg" class="card-img-top" alt="...">
       </div>
-      <span class="text-bold text-light fs-5">Independence Day Special: Fighter,<br> SatyaPrem Ki Katha,& The War drop new update</span>
+      <span class="text-bold text-secondary fs-5">Independence Day Special: Fighter,<br> SatyaPrem Ki Katha,& The War drop new update</span>
     </div>
  </div>
 </div>
 
 
    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script>
+  function darktheme(){
+      const bodyelement =document.getElementById("body");
+      bodyelement.classList.remove('b-light');
+      bodyelement.classList.add('b-dark');
+      bodyelement.classList.add('text-light');
+      bodyelement.classList.remove('text-dark');
+  }
+  function lighttheme(){
+      const bodyelement =document.getElementById("body");
+      bodyelement.classList.remove('b-dark');
+      bodyelement.classList.add('b-light');
+      bodyelement.classList.remove('text-light');
+      bodyelement.classList.add('text-dark');
+  }
+
+  function watchlist()
+{
+    alert('Movie has been Added to Watchlist');
+}
+
+function  Download()
+{
+    alert('Downloading  Starting  ');
+}
+</script>
 </body>
 </html>
