@@ -1,215 +1,430 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hollywood</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
-     rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
-     crossorigin="anonymous">
-     <style>
-      body{
-        background-color: black;
-      }
-      .heading{
-        font-weight: bold;
-        text-align: center;
-        font-size: 50px;
-      }
-       .main-img{
-        height: 300px;
 
-       } 
-       .card-header{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        /* justify-content: space-between; */
-        align-items: center;
-       }
-     </style>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hollywood</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../css/webseries.css" />
+    <script src="https://kit.fontawesome.com/06b798522f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+      <style>
+        @media(min-width:765px)
+        {
+          .mobile{
+          display:none;
+        }
+  
+        }
+        @media(max-width:765px)
+        {
+          .desktop{
+          display:none;
+        }
+  
+        }
+       
+      </style>
+  <style>
+    body {
+      background-color: black;
+    }
 
-  <body>
-    <div>
-        <img src="/img/iron man.webp" height="600px" width="1520px">
+    .heading {
+      font-weight: bold;
+      text-align: center;
+      font-size: 50px;
+    }
+
+    .main-img {
+      height: 300px;
+
+    }
+
+    .card-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      /* justify-content: space-between; */
+      align-items: center;
+    }
+
+    .body {
+      background-color: #00050d;
+      color: white;
+      padding: 0;
+      margin: 0;
+    }
+
+    .Dark {
+      color: black;
+      background-color: #fff;
+    }
+  </style>
+</head>
+
+<body class="body" id="DarkMode">
+  <nav class="navbar navbar-expand-md bg-body-tertiary bg-dark  navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-5" href="#">
+        <img src="./../img/webseries/logo.png" width="120px" height="50px" alt="" srcset="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <button class="btn text-white me-3 mobile float-end" type="submit"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="bi bi-person-square text-white fs-3"></i></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link ms-5  text-light" aria-current="page" href="./../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./../pages/tvshows.html">TV Shows</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Movies
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./../pages/holly.html">Hollywood</a></li>
+              <li><a class="dropdown-item" href="./../pages/bollywood/bollywood.html">Bollywood</a></li>
+              
+              <li><a class="dropdown-item" href="./../pages/Tollywoodcinema.html">Tollywood</a></li>
+            </ul>
+          </li> 
+         
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./../pages/webseries.html">Web Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./../pages/cartoon.html">Cartoon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./../pages/news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./../pages/songs.html">Songs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./../pages/about.html">About Us</a>
+          </li>
+          
+          
+        </ul>
+        <form class="d-flex me-2" role="search">
+          <input class="mt-2 form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn text-white me-3 mt-2" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+        <button  class="  NavName ulmarleft rounded-3 mt-2 lightbtn" style="border-style: 1px #ffebe8;" onclick="Light()">
+          Dark <i class="fa-solid fa-moon fa-lg"></i>
+        </button>
+        <button class="NavName   ms-2 rounded-3 mt-2 ulmarleft2 lightbtn" onclick="Dark()">
+          Light <i class="fa-regular fa-moon fa-lg"></i>
+        </button>
+        <button class="btn text-white me-2 mt-2  desktop" type="submit"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="bi bi-person-square text-white fs-3"></i></button>
+       
+      
+      </div>
     </div>
-    <p class="heading text-bg-warning">TOP 10 MOVIES</p>
-    <div class="container " >
-        <div class="row " >
-          <div class="col-lg-4  mb-4 ">
-            <!-- <div class="video-card mt-4 mx-0  text-light my-0" >
+  </nav>
+  <div class="offcanvas offcanvas-end  text-bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="bi bi-person-square text-white fs-3 me-2"></i></h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+     <div>
+      <button class="btn"><h6 class="text-white">Sign Up</h5></button>
+     </div>
+     <hr class="text-white">
+     <div>
+      <button class="btn"><h6 class="text-white">Subscribe Now</h5></button>
+      
+     </div>
+     <hr class="text-white">
+     <div>
+      <button class="btn"><h6 class="text-white">Help & Legal</h5></button>
+     
+     </div>
+    </div>
+  </div>
+  <button class="mb-2 NavName ulmarleft rounded-3 mt-2  lightbtn" style="border-style: 1px #ffebe8;" onclick="Light()">
+    Dark <i class="fa-solid fa-moon fa-lg"></i>
+  </button>
+  <button class="NavName mb-2 ms-2 rounded-3 mt-2 ulmarleft2 lightbtn" onclick="Dark()">
+    Light <i class="fa-regular fa-moon fa-lg"></i>
+  </button>
+
+  <div>
+    <img src="/img/iron man.webp" height="600px" width="1520px">
+  </div>
+  <p class="heading text-bg-warning">TOP 10 MOVIES</p>
+  <div class="container ">
+    <div class="row ">
+      <div class="col-lg-4  mb-4 ">
+        <!-- <div class="video-card mt-4 mx-0  text-light my-0" >
               <img src="/img/image1.jpeg" class="img-fluid m-1 main-img"/>
             </div> -->
-            <div class="card bg-dark text-light" style=" width: 18rem;">
-              <img src="/img/image1.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title ">VIKING SIEGE</h5>
-                <p class="card-text">During a wild night of debauchery, a gang of vengeful women plot to massacre a monastery full of corrupt monks who sold their loved ones as slaves.</p>
-                <a href="#" class="card-link"><button class="btn btn-outline-primary">Watch Now</button></a>
-                <a href="#" class="card-link"><button class="btn btn-outline-danger">Share</button></a>
-              </div>
-            </div>
+        <div class="card bg-dark text-light" style=" width: 18rem;">
+          <img src="/img/image1.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title ">VIKING SIEGE</h5>
+            <p class="card-text">During a wild night of debauchery, a gang of vengeful women plot to massacre a
+              monastery full of corrupt monks who sold their loved ones as slaves.</p>
+            <a href="#" class="card-link"><button class="btn btn-outline-primary">Watch Now</button></a>
+            <a href="#" class="card-link"><button class="btn btn-outline-danger">Share</button></a>
           </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <!-- <div class="video-card mt-4 mx-0 text-light my-0" >
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <!-- <div class="video-card mt-4 mx-0 text-light my-0" >
               <img src="/img/iron man movie.jpeg" class="img-fluid m-1 main-img"/>
             </div> -->
-            <div class="card bg-dark text-light" style="width: 18rem;">
-              <img src="/img/iron man movie.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">IRON MAN 3</h5>
-                <p class="card-text">Tony Stark wrestles with the ramifications of the events of The Avengers (2012) during a national terrorism campaign on the United States </p>
-                <a href="#" class="card-link"><button class="btn btn-outline-primary">Watch Now</button></a>
-                    <a href="#" class="card-link"><button class="btn btn-outline-danger">Share</button></a>
-              </div>
-            </div>
+        <div class="card bg-dark text-light" style="width: 18rem;">
+          <img src="/img/iron man movie.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">IRON MAN 3</h5>
+            <p class="card-text">Tony Stark wrestles with the ramifications of the events of The Avengers (2012) during
+              a national terrorism campaign on the United States </p>
+            <a href="#" class="card-link"><button class="btn btn-outline-primary">Watch Now</button></a>
+            <a href="#" class="card-link"><button class="btn btn-outline-danger">Share</button></a>
+          </div>
         </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <!-- <div class="video-card mt-4 mx-0 text-light my-0" >
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <!-- <div class="video-card mt-4 mx-0 text-light my-0" >
                   <img src="/img/image2.jpeg" class="img-fluid m-1 main-img"/>
                 </div> -->
-                <div class="card bg-dark text-light" style=" width: 18rem;">
-                  <img src="/img/image2.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">FAST X</h5>
-                    <p class="card-text">The family of IMDb users have opinions about the Fast & Furious franchise. See how they rank each of the nine films in the series</p>
-                    <a href="#" class="card-link"><button class="btn btn-outline-primary">Watch Now</button></a>
-                    <a href="#" class="card-link"><button class="btn btn-outline-danger">Share</button></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <!-- <div class="video-card mt-4 mx-0 text-light my-0" >
+        <div class="card bg-dark text-light" style=" width: 18rem;">
+          <img src="/img/image2.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">FAST X</h5>
+            <p class="card-text">The family of IMDb users have opinions about the Fast & Furious franchise. See how they
+              rank each of the nine films in the series</p>
+            <a href="#" class="card-link"><button class="btn btn-outline-primary">Watch Now</button></a>
+            <a href="#" class="card-link"><button class="btn btn-outline-danger">Share</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <!-- <div class="video-card mt-4 mx-0 text-light my-0" >
                   <img src="/img/image3.jpeg" class="img-fluid m-1 main-img"/>
                 </div> -->
-                <div class="card bg-dark text-light" style=" width: 18rem;">
-                  <img src="/img/image3.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">EXPENDIBLES</h5>
-                    <p class="card-text">The film is about a team of elite mercenaries tasked with a mission to overthrow a Latin American dictator whom they soon discover to be a mere puppet controlled by a corrupt ex-CIA agent.</p>
-                    <a href="#" class="card-link"><button class="btn btn-outline-primary">Watch Now</button></a>
-                    <a href="#" class="card-link"><button class="btn btn-outline-danger">Share</button></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <!-- <div class="video-card mt-4 mx-0 text-light my-0" >
+        <div class="card bg-dark text-light" style=" width: 18rem;">
+          <img src="/img/image3.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">EXPENDIBLES</h5>
+            <p class="card-text">The film is about a team of elite mercenaries tasked with a mission to overthrow a
+              Latin American dictator whom they soon discover to be a mere puppet controlled by a corrupt ex-CIA agent.
+            </p>
+            <a href="#" class="card-link"><button class="btn btn-outline-primary">Watch Now</button></a>
+            <a href="#" class="card-link"><button class="btn btn-outline-danger">Share</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <!-- <div class="video-card mt-4 mx-0 text-light my-0" >
                   <img src="/img/iamge5.jpeg" class="img-fluid m-1 main-img"/>
                 </div> -->
-                <div class="card bg-dark text-light" style=" width: 18rem;">
-                  <img src="/img/iamge5.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">AVTAR</h5>
-                    <p class="card-text">It is set in the mid-22nd century, when humans are colonizing Pandora, a lush habitable moon of a gas giant in the Alpha Centauri star system, in order to mine the valuable mineral unobtanium.</p>
-                    <a href="#" class="card-link"><button class="btn btn-outline-primary">Watch Now</button></a>
-                    <a href="#" class="card-link"><button class="btn btn-outline-danger">Share</button></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <!-- <div class="video-card mt-4 mx-0 text-light my-0" >
+        <div class="card bg-dark text-light" style=" width: 18rem;">
+          <img src="/img/iamge5.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">AVTAR</h5>
+            <p class="card-text">It is set in the mid-22nd century, when humans are colonizing Pandora, a lush habitable
+              moon of a gas giant in the Alpha Centauri star system, in order to mine the valuable mineral unobtanium.
+            </p>
+            <a href="#" class="card-link"><button class="btn btn-outline-primary">Watch Now</button></a>
+            <a href="#" class="card-link"><button class="btn btn-outline-danger">Share</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <!-- <div class="video-card mt-4 mx-0 text-light my-0" >
                   <img src="/img/image6.jpeg" class="img-fluid m-1 main-img"/>
                 </div> -->
-                <div class="card bg-dark text-light" style=" width: 18rem;">
-                  <img src="/img/image6.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">HULK</h5>
-                    <p class="card-text">The film explores Bruce Banner's origins. After a lab accident involving gamma radiation, he transforms into a giant green-skinned creature  </p>
-                    <a href="#" class="card-link"><button class="btn btn-outline-primary">Watch Now</button></a>
-                    <a href="#" class="card-link"><button class="btn btn-outline-danger">Share</button></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-              <!-- <div class="video-card mt-4 mx-0 text-light my-0" >
+        <div class="card bg-dark text-light" style=" width: 18rem;">
+          <img src="/img/image6.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">HULK</h5>
+            <p class="card-text">The film explores Bruce Banner's origins. After a lab accident involving gamma
+              radiation, he transforms into a giant green-skinned creature </p>
+            <a href="#" class="card-link"><button class="btn btn-outline-primary">Watch Now</button></a>
+            <a href="#" class="card-link"><button class="btn btn-outline-danger">Share</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <!-- <div class="video-card mt-4 mx-0 text-light my-0" >
                   <img src="/img/image6.jpeg" class="img-fluid m-1 main-img"/>
                 </div> -->
-                 <div class="card bg-dark text-light" style="  width: 18rem;">
-                  <img src="/img/image7.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">WAKANDA FOREVER</h5>
-                    <p class="card-text">Queen Ramonda, Shuri, M'Baku, Okoye and the Dora Milaje fight to protect the kingdom of Wakanda from intervening world powers in the wake of King T'Challa's death.</p>
-                    <a href="#" class="card-link"><button class="btn btn-outline-primary">Watch Now</button></a>
-                    <a href="#" class="card-link"><button class="btn btn-outline-danger">Share</button></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <!-- <div class="video-card mt-4 mx-0 text-light my-0" >
+        <div class="card bg-dark text-light" style="  width: 18rem;">
+          <img src="/img/image7.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">WAKANDA FOREVER</h5>
+            <p class="card-text">Queen Ramonda, Shuri, M'Baku, Okoye and the Dora Milaje fight to protect the kingdom of
+              Wakanda from intervening world powers in the wake of King T'Challa's death.</p>
+            <a href="#" class="card-link"><button class="btn btn-outline-primary">Watch Now</button></a>
+            <a href="#" class="card-link"><button class="btn btn-outline-danger">Share</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <!-- <div class="video-card mt-4 mx-0 text-light my-0" >
                   <img src="/img/image8.jpeg" class="img-fluid m-1 main-img"/>
                 </div> -->
-                <div class="card bg-dark text-light" style="width: 18rem;">
-                  <img src="/img/image8.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">ADAM DRIVER 65</h5>
-                    <p class="card-text"> In the film, a pilot crashes on an unknown planet and attempts to escape while surviving with a young girl.</p>
-                    <a href="#" class="card-link"><button class="btn btn-outline-primary">Watch Now</button></a>
-                    <a href="#" class="card-link"><button class="btn btn-outline-danger">Share</button></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4">
-                <!-- <div class="video-card mt-4 mx-0 text-light my-0" >
+        <div class="card bg-dark text-light" style="width: 18rem;">
+          <img src="/img/image8.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">ADAM DRIVER 65</h5>
+            <p class="card-text"> In the film, a pilot crashes on an unknown planet and attempts to escape while
+              surviving with a young girl.</p>
+            <a href="#" class="card-link"><button class="btn btn-outline-primary">Watch Now</button></a>
+            <a href="#" class="card-link"><button class="btn btn-outline-danger">Share</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <!-- <div class="video-card mt-4 mx-0 text-light my-0" >
                   <img src="/img/image9.jpeg" class="img-fluid m-1 main-img"/>
                 </div> -->
-                <div class="card bg-dark text-light" style=" width: 18rem;">
-                  <img src="/img/image9.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">BLADE RUNNER 2045</h5>
-                    <p class="card-text">Plot. In the year 2049, 30 years following the events of Blade Runner, bioengineered humans known as replicants are slaves.</p>
-                    <a href="#" class="card-link"><button class="btn btn-outline-primary">Watch Now</button></a>
-                    <a href="#" class="card-link"><button class="btn btn-outline-danger">Share</button></a>
-                  </div>
+        <div class="card bg-dark text-light" style=" width: 18rem;">
+          <img src="/img/image9.jpeg" class="card-img-top" alt="..." style="height: 12rem; width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">BLADE RUNNER 2045</h5>
+            <p class="card-text">Plot. In the year 2049, 30 years following the events of Blade Runner, bioengineered
+              humans known as replicants are slaves.</p>
+            <a href="#" class="card-link"><button class="btn btn-outline-primary">Watch Now</button></a>
+            <a href="#" class="card-link"><button class="btn btn-outline-danger">Share</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="fs-1  text-center  ms-5 pt-5 fm" id="act"> <u><i>Romantic Movies </i></u></p>
+  <br />
+  <div class="row">
+    <img src="./../img/img1.jpeg" class="img-fluid col-lg-2 col-sm-3  transform">
+    <img src="./../img/img2.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
+    <img src="./../img/img3.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
+    <img src="./../img/img4.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
+    <img src="./../img/img5.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
+    <img src="./../img/img6.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
+
+  </div> <br /><br />
+
+  <p class="fs-1 text-center  ms-5 pt-5 fm" id="act"> <u><i>Comedy Movies </i></u></p>
+  <br />
+
+  <div class="row">
+    <img src="./../img/comedy1.jpeg" class="img-fluid col-lg-2 col-sm-3  transform">
+    <img src="./../img/comedy2.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
+    <img src="./../img/comedy3.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
+    <img src="./../img/comedy4.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
+    <img src="./../img/comedy5.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
+    <img src="./../img/comedy6.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
+  </div> <br /><br />
+
+  <p class="fs-1 text-center  ms-5 pt-5 fm" id="act"> <u><i>Action Movies</i></u></p>
+  <br />
+  <div class="row">
+    <img src="./../img/action1.jpeg" class="img-fluid col-lg-2 col-sm-3  transform">
+    <img src="./../img/action2.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
+    <img src="./../img/action3.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
+    <img src="./../img/action4.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
+    <img src="./../img/action5.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
+    <img src="./../img/action6.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
+  </div> <br /><br />
+
+  <div class=" mt-5 font-monospace " style="background-color: #0b1120;">
+    
+    <div class="row ">
+        <div class="col-md-6">
+            <div class="row mt-1">
+            <div class="col-md-4 ms-5">
+                <img src="./../img/webseries/logo.png" height="70px" width="120px"/>
+                <h3 class="text-warning fs-4 mt-2">Watch Wave</h3>
+                <ul>
+                   <li class="text-white mt-2"><a href="http://" class="text-white text-decoration-none">Home</a></li>
+                   <li class="text-white"><a href="http://" class="text-white text-decoration-none">Tv Shows</a></li>
+                   <li class="text-white"><a href="http://" class="text-white text-decoration-none">Webseries</a></li>
+                   <li class="text-white"><a href="http://" class="text-white text-decoration-none">Movies</a></li>
+                   
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3 class="text-white font-monospace mt-5">Support</h3>
+                <ul>
+                    <li class="text-white" ><a href="http://" class="text-white text-decoration-none">Help Center</a></li>
+                    <li class="text-white"><a href="http://" class="text-white text-decoration-none">Terms Of Use</a></li>
+                    <li class="text-white"><a href="http://" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    <li class="text-white"><a href="http://" class="text-white text-decoration-none">Content Complaints</a></li>
+                    
+                    
+                </ul>
+            </div>
+            </div>
+
+        </div>
+        <div class="col-md-6 ">
+            <div class="row">
+                <div class="col-md-6">
+                   <h2 class="text-white mt-5 font-monospace">Connect with us</h2> 
+                   <div class="d-flex">
+                 <a href="" class="text-white text-decoration-none ms-3"><i class="bi bi-instagram fs-1 text-white me-4"></i></a>
+                 <a href="" class="text-white text-decoration-none"><i class="bi bi-facebook fs-1 text-white me-4"></i></a>
+                 <a href="" class="text-white text-decoration-none"><i class="bi bi-youtube fs-1 text-white me-4"></i></a>
+                 <a href="" class="text-white text-decoration-none"><i class="bi bi-twitter fs-1 text-white me-4"></i></a>
+                 
+
+                   </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-white mt-5 font-monospace">Download the App</h2> 
+                    <div class="d-flex">
+
+                    <img src="./../img/webseries/gpay.png" height="50px" alt="" srcset="">
+                    <img src="./../img/webseries/appstore.png" height="50px" alt="" srcset="">
+                    </div>
                 </div>
             </div>
+
+        </div>
+
+
+
+        
+
     </div>
-            
+    
+
 </div>
+  <script>
+    function Light() {
+      const Element = document.getElementById("DarkMode");
+      Element.className = "body";
+    }
 
-<p class="fs-1 text-light text-center  ms-5 pt-5 fm" id="act"> <u><i>Romantic Movies </i></u></p>
-    <br />
-    <div class="row">
-      <img src="./../img/img1.jpeg" class="img-fluid col-lg-2 col-sm-3  transform">
-      <img src="./../img/img2.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
-      <img src="./../img/img3.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
-      <img src="./../img/img4.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
-      <img src="./../img/img5.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
-      <img src="./../img/img6.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
-
-    </div> <br /><br />
-
-    <p class="fs-1 text-light text-center  ms-5 pt-5 fm" id="act"> <u><i>Comedy Movies </i></u></p>
-    <br />
-
-    <div class="row">
-      <img src="./../img/comedy1.jpeg" class="img-fluid col-lg-2 col-sm-3  transform">
-      <img src="./../img/comedy2.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
-      <img src="./../img/comedy3.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
-      <img src="./../img/comedy4.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
-      <img src="./../img/comedy5.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
-      <img src="./../img/comedy6.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
-      </div> <br /><br />
-
-      <p class="fs-1 text-light text-center  ms-5 pt-5 fm" id="act"> <u><i>Action Movies</i></u></p>
-    <br />
-    <div class="row">
-      <img src="./../img/action1.jpeg" class="img-fluid col-lg-2 col-sm-3  transform">
-      <img src="./../img/action2.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
-      <img src="./../img/action3.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
-      <img src="./../img/action4.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
-      <img src="./../img/action5.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
-      <img src="./../img/action6.jpeg" class="img-fluid col-lg-2 col-sm-3 transform">
-      </div> <br /><br />
+    function Dark() {
+      const Element = document.getElementById("DarkMode");
+      Element.className = "Dark";
+    }
+  </script>
 
 
 
 
-    
-    
-      
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
-  </body>
-</html>         
+</body>
+
+</html>
