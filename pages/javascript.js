@@ -36,3 +36,57 @@ function watchlist()
 {
     alert('Movie has been Added to Watchlist');
 }
+
+function lightmode()
+{
+    let bodyelement=document.getElementById('bodymode');
+    bodyelement.classList.remove('bg-black');
+    bodyelement.classList.add('bg-white');
+
+    let textelement=document.getElementById('textmode');
+    textelement.classList.remove('text-white');
+    textelement.classList.add('text-black');
+
+    let textelement1=document.getElementsById('text1');
+    textelement1.classList.remove('text-white-50');
+    textelement1.classList.add('text-black');
+
+    let infoelementsita=document.getElementsById('infomode');
+    infoelementsita.classList.remove('bg');
+    infoelementsita.classList.add('bg-secondary');
+}
+
+/*function lightmodesita()
+{
+    let bodyelementsita=document.getElementById('bodymodesita');
+    bodyelementsita.classList.remove('bg-black');
+    bodyelementsita.classList.add('bg-white');
+
+    let textelementsita=document.getElementById('textmodesita');
+    textelementsita.classList.remove('text-white');
+    textelementsita.classList.add('text-black');
+
+    let infoelementsita=document.getElementsById('infomodesita')
+    infoelementsita.classList.add('.bg-secondary.bg-gradient');
+}*/
+
+function darkmode()
+{
+    let bodyelement=document.getElementById('bodymode');
+    bodyelement.classList.remove('bg-white');
+    bodyelement.classList.add('bg-black');
+
+    let textelement=document.getElementById('textmode');
+    textelement.classList.remove('text-black');
+    textelement.classList.add('text-white');
+}
+
+/*function darkmodesita()
+    {let bodyelementsita=document.getElementById('bodymodesita');
+    bodyelementsita.classList.remove('bg-white');
+    bodyelementsita.classList.add('bg-black');
+
+    let textelementsita=document.getElementById('textmodesita');
+    textelementsita.classList.remove('text-black');
+    textelementsita.classList.add('text-white');
+}*/
