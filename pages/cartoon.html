@@ -9,122 +9,147 @@
   <link rel="stylesheet" href="./../css/cartoon.css" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <style>
-      @media(min-width:765px)
-      {
-        .mobile{
-        display:none;
+  <style>
+    .body {
+      background-color: #00050d;
+      color: white;
+      padding: 0;
+      margin: 0;
+    }
+
+    .Dark {
+      color: black;
+      background-color: #fff;
+    }
+
+    @media(min-width:765px) {
+      .mobile {
+        display: none;
       }
 
-      }
-      @media(max-width:765px)
-      {
-        .desktop{
-        display:none;
+    }
+
+    @media(max-width:765px) {
+      .desktop {
+        display: none;
       }
 
-      }
-     
-    </style>
+    }
+  </style>
 
-  
+
 </head>
 
-<body class="bg-black body"  id="DarkMode">
-  
-  
+<body class="bg-black body" id="DarkMode">
 
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand " href="#">
-          <img src="./../img/webseries/logo.png" width="130px" height="50px" alt="" srcset=""/>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand " href="#">
+        <img src="./../img/webseries/logo.png" width="130px" height="50px" alt="" srcset="" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <button class="btn text-white me-3 mobile float-end" type="submit" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i
+          class="bi bi-person-square text-white fs-3"></i></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link ms-5  text-light" aria-current="page" href="./../../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="tvshows.html">TV Shows</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Movies
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="holly.html">Hollywood</a></li>
+              <li><a class="dropdown-item" href="bollywood.html">Bollywood</a></li>
+
+              <li><a class="dropdown-item" href="Tollywoodcinema.html">Tollywood</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light" href="webseries.html">Web Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="cartoon.html">Cartoon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="songs.html">Songs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="songs.html">About Us</a>
+          </li>
+
+
+        </ul>
+        <form class="d-flex me-2" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn text-white me-3" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+        <button class="  NavName ulmarleft rounded-3 mt-2 lightbtn" style="border-style: 1px #ffebe8;"
+          onclick="Light()">
+          Dark <i class="fa-solid fa-moon fa-lg"></i>
         </button>
-        <button class="btn text-white me-3 mobile float-end" type="submit"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="bi bi-person-square text-white fs-3"></i></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link ms-5  text-light" aria-current="page" href="./../../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="tvshows.html">TV Shows</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Movies
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="holly.html">Hollywood</a></li>
-                <li><a class="dropdown-item" href="bollywood.html">Bollywood</a></li>
-                
-                <li><a class="dropdown-item" href="Tollywoodcinema.html">Tollywood</a></li>
-              </ul>
-            </li> 
-           
-            <li class="nav-item">
-              <a class="nav-link text-light" href="webseries.html">Web Series</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="cartoon.html">Cartoon</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="news.html">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="songs.html">Songs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="songs.html">About Us</a>
-            </li>
-            
-            
-          </ul>
-          <form class="d-flex me-2" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn text-white me-3" type="submit"><i class="bi bi-search"></i></button>
-          </form>
-          <button  class="  NavName ulmarleft rounded-3 mt-2 lightbtn" style="border-style: 1px #ffebe8;" onclick="Light()">
-            Dark <i class="fa-solid fa-moon fa-lg"></i>
-          </button>
-          <button class="NavName   ms-2 rounded-3 mt-2 ulmarleft2 lightbtn" onclick="Dark()">
-            Light <i class="fa-regular fa-moon fa-lg"></i>
-          </button>
-          <button class="btn text-white me-3 desktop" type="submit"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="bi bi-person-square text-white fs-3"></i></button>
-         
-        
-        </div>
-      </div>
-    </nav>
-    <div class="offcanvas offcanvas-end  text-bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="bi bi-person-square text-white fs-3 me-2"></i></h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-       <div>
-        <button class="btn"><h6 class="text-white">Sign Up</h5></button>
-       </div>
-       <hr class="text-white">
-       <div>
-        <button class="btn"><h6 class="text-white">Subscribe Now</h5></button>
-        
-       </div>
-       <hr class="text-white">
-       <div>
-        <button class="btn"><h6 class="text-white">Help & Legal</h5></button>
-       
-       </div>
+        <button class="NavName   ms-2 rounded-3 mt-2 ulmarleft2 lightbtn" onclick="Dark()">
+          Light <i class="fa-regular fa-moon fa-lg"></i>
+        </button>
+        <button class="btn text-white me-3 desktop" type="submit" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i
+            class="bi bi-person-square text-white fs-3"></i></button>
+
+
       </div>
     </div>
-  
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </nav>
+  <div class="offcanvas offcanvas-end  text-bg-dark" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="bi bi-person-square text-white fs-3 me-2"></i>
+      </h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <button class="btn">
+          <h6 class="text-white">Sign Up</h5>
+        </button>
+      </div>
+      <hr class="text-white">
+      <div>
+        <button class="btn">
+          <h6 class="text-white">Subscribe Now</h5>
+        </button>
+
+      </div>
+      <hr class="text-white">
+      <div>
+        <button class="btn">
+          <h6 class="text-white">Help & Legal</h5>
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
 
 
@@ -164,7 +189,7 @@
     </button>
   </div>
 
-  <p class="fs-1 text-light text-center pt-5 fm">Top Cartoon Movie's❤️</p>
+  <p class="fs-1  text-center pt-5 fm">Top Cartoon Movie's❤️</p>
   <div class="container">
 
 
@@ -288,7 +313,8 @@
         </div><br />
 
         <div class="card-body">
-          <a href="alladin.html" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
+          <a href="alladin.html" class="card-link"><button class="btn btn-outline-danger"><i
+                class="fa-regular fa-circle-play"></i>
               Watch Now</button></a>
           <a href="#" class="card-link"><button class="btn btn-outline-info">Share</button></a>
         </div>
@@ -304,7 +330,8 @@
         </div>
 
         <div class="card-body">
-          <a href="sofia.html" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
+          <a href="sofia.html" class="card-link"><button class="btn btn-outline-danger"><i
+                class="fa-regular fa-circle-play"></i>
               Watch Now</button></a>
           <a href="#" class="card-link"><button class="btn btn-outline-info">Share</button></a>
         </div>
@@ -315,7 +342,7 @@
     </div>
     <br /><br />
 
-    <p class="fs-1 text-light text-center ms-5 pt-5 fm" id="act"> <u><i>Trending Today</i></u></p>
+    <p class="fs-1 text-center ms-5 pt-5 fm" id="act"> <u><i>Trending Today</i></u></p>
     <br />
     <div class="row">
       <img src="./../img/cartoon/trend5.jpg" class="img-fluid col-lg-2 col-sm-3  transform">
@@ -327,7 +354,7 @@
 
     </div> <br /><br />
 
-    <p class="fs-1 text-light text-center ms-5 pt-5 fm" id="act"> <u><i>Action movie's</i></u></p>
+    <p class="fs-1 text-center ms-5 pt-5 fm" id="act"> <u><i>Action movie's</i></u></p>
     <br />
     <div class="row">
       <img src="./../img/cartoon/action7.jpg" class="img-fluid col-lg-2 col-md-3  transform">
@@ -339,7 +366,7 @@
     </div> <br /><br />
 
 
-    <p class="fs-1 text-light text-center ms-5 pt-5 fm" id="act"> <u><i>Barbie movie's</i></u></p>
+    <p class="fs-1  text-center ms-5 pt-5 fm" id="act"> <u><i>Barbie movie's</i></u></p>
     <br />
     <div class="row">
       <img src="./../img/cartoon/barbie5.jpg" class="img-fluid col-lg-2 col-md-3 transform">
@@ -352,7 +379,7 @@
     </div> <br /><br />
 
 
-    <p class="fs-1 text-light text-center  ms-5 pt-5 fm" id="act"> <u><i>Animated Stories</i></u></p>
+    <p class="fs-1  text-center  ms-5 pt-5 fm" id="act"> <u><i>Animated Stories</i></u></p>
     <br />
     <div class="row">
       <img src="./../img/cartoon/story1.jpg" class="img-fluid col-lg-2 col-md-3 transform">
@@ -360,11 +387,11 @@
       <img src="./../img/cartoon/story3.jpg" class="img-fluid col-lg-2 col-md-3 transform">
       <img src="./../img/cartoon/story4.jpg" class="img-fluid col-lg-2 col-md-3 transform">
       <img src="./../img/cartoon/sofia.jpg" class="img-fluid col-lg-2 col-md-3 transform">
-      <img src="./../img/cartoon/story6.jpg" class="img-fluid col-lg-2 col-md-3 transform"> 
+      <img src="./../img/cartoon/story6.jpg" class="img-fluid col-lg-2 col-md-3 transform">
 
     </div> <br /><br />
 
-    <p class="fs-2 text-light text-center pt-5 fm">Top Global Studios🎙️</p>
+    <p class="fs-2  text-center pt-5 fm">Top Global Studios🎙️</p>
 
     <div class="container">
       <div class="row">
@@ -382,78 +409,89 @@
         <img src="./../img/cartoon/studio4.webp" class="img-fluid col-lg-4 mt-3 rounding " alt="...">
         <img src="./../img/cartoon/studio6.jpg" class="img-fluid col-lg-4 mt-3 rounding" alt="...">
 
-      </div> 
+      </div>
 
-      <br/>
+      <br />
 
     </div>
   </div>
-    <div class=" mt-5 font-monospace " style="background-color: #0b1120;">
-    
-      <div class="row ">
-          <div class="col-md-6">
-              <div class="row mt-1">
-              <div class="col-md-4 ms-5">
-                  <img src="./../img/webseries/logo.png" height="70px" width="120px"/>
-                  <h3 class="text-warning fs-4 mt-2">Watch Wave</h3>
-                  <ul>
-                     <li class="text-white mt-2"><a href="http://" class="text-white text-decoration-none">Home</a></li>
-                     <li class="text-white"><a href="http://" class="text-white text-decoration-none">Tv Shows</a></li>
-                     <li class="text-white"><a href="http://" class="text-white text-decoration-none">Webseries</a></li>
-                     <li class="text-white"><a href="http://" class="text-white text-decoration-none">Movies</a></li>
-                     
-                  </ul>
-              </div>
-              <div class="col-md-4">
-                  <h3 class="text-white font-monospace mt-5">Support</h3>
-                  <ul>
-                      <li class="text-white" ><a href="http://" class="text-white text-decoration-none">Help Center</a></li>
-                      <li class="text-white"><a href="http://" class="text-white text-decoration-none">Terms Of Use</a></li>
-                      <li class="text-white"><a href="http://" class="text-white text-decoration-none">Privacy Policy</a></li>
-                      <li class="text-white"><a href="http://" class="text-white text-decoration-none">Content Complaints</a></li>
-                      
-                      
-                  </ul>
-              </div>
-              </div>
+  <div class=" mt-5 font-monospace " style="background-color: #0b1120;">
 
+    <div class="row ">
+      <div class="col-md-6">
+        <div class="row mt-1">
+          <div class="col-md-4 ms-5">
+            <img src="./../img/webseries/logo.png" height="70px" width="120px" />
+            <h3 class="text-warning fs-4 mt-2">Watch Wave</h3>
+            <ul>
+              <li class="text-white mt-2"><a href="http://" class="text-white text-decoration-none">Home</a></li>
+              <li class="text-white"><a href="http://" class="text-white text-decoration-none">Tv Shows</a></li>
+              <li class="text-white"><a href="http://" class="text-white text-decoration-none">Webseries</a></li>
+              <li class="text-white"><a href="http://" class="text-white text-decoration-none">Movies</a></li>
+
+            </ul>
           </div>
-          <div class="col-md-6 ">
-              <div class="row">
-                  <div class="col-md-6">
-                     <h2 class="text-white mt-5 font-monospace">Connect with us</h2> 
-                     <div class="d-flex">
-                   <a href="" class="text-white text-decoration-none ms-3"><i class="bi bi-instagram fs-1 text-white me-4"></i></a>
-                   <a href="" class="text-white text-decoration-none"><i class="bi bi-facebook fs-1 text-white me-4"></i></a>
-                   <a href="" class="text-white text-decoration-none"><i class="bi bi-youtube fs-1 text-white me-4"></i></a>
-                   <a href="" class="text-white text-decoration-none"><i class="bi bi-twitter fs-1 text-white me-4"></i></a>
-                   
+          <div class="col-md-4">
+            <h3 class="text-white font-monospace mt-5">Support</h3>
+            <ul>
+              <li class="text-white"><a href="http://" class="text-white text-decoration-none">Help Center</a></li>
+              <li class="text-white"><a href="http://" class="text-white text-decoration-none">Terms Of Use</a></li>
+              <li class="text-white"><a href="http://" class="text-white text-decoration-none">Privacy Policy</a></li>
+              <li class="text-white"><a href="http://" class="text-white text-decoration-none">Content Complaints</a>
+              </li>
 
-                     </div>
-                  </div>
-                  <div class="col-md-6">
-                      <h2 class="text-white mt-5 font-monospace">Download the App</h2> 
-                      <div class="d-flex">
 
-                      <img src="./../img/webseries/gpay.png" height="50px" alt="" srcset="">
-                      <img src="./../img/webseries/appstore.png" height="50px" alt="" srcset="">
-                      </div>
-                  </div>
-              </div>
-
+            </ul>
           </div>
-
-
-
-          
+        </div>
 
       </div>
-      
+      <div class="col-md-6 ">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="text-white mt-5 font-monospace">Connect with us</h2>
+            <div class="d-flex">
+              <a href="" class="text-white text-decoration-none ms-3"><i
+                  class="bi bi-instagram fs-1 text-white me-4"></i></a>
+              <a href="" class="text-white text-decoration-none"><i class="bi bi-facebook fs-1 text-white me-4"></i></a>
+              <a href="" class="text-white text-decoration-none"><i class="bi bi-youtube fs-1 text-white me-4"></i></a>
+              <a href="" class="text-white text-decoration-none"><i class="bi bi-twitter fs-1 text-white me-4"></i></a>
+
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h2 class="text-white mt-5 font-monospace">Download the App</h2>
+            <div class="d-flex">
+
+              <img src="./../img/webseries/gpay.png" height="50px" alt="" srcset="">
+              <img src="./../img/webseries/appstore.png" height="50px" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+    </div>
+
 
   </div>
-    
-             
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  <script>
+  function Light() {
+    const Element = document.getElementById("DarkMode");
+    Element.className = "body";
+  }
+
+  function Dark() {
+    const Element = document.getElementById("DarkMode");
+    Element.className = "Dark";}
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
 
