@@ -27,10 +27,20 @@
       }
 
       }
+      .body{
+    background-color: #00050d;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.Dark{
+    color: black;
+    background-color: #fff;
+}
      
     </style>
     </head>
-<body class="main">
+<body class="main body" id="DarkMode">
 
   <nav class="navbar navbar-expand-md bg-body-tertiary bg-dark  navbar-dark fixed-top">
     <div class="container-fluid">
@@ -396,7 +406,7 @@
 
                  
 
-                <p class="fs-3  text-light fw-bolder pt-5 fm ms-4"> Browse By Language</p>
+                <p class="fs-3  fw-bolder pt-5 fm ms-4"> Browse By Language</p>
 
                 <div class="container text-center horizontal ">
                   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 mt-3">
@@ -439,7 +449,7 @@
                     
                   </div>
                 </div>
-                
+              </div>
 
                 <div class=" mt-5 font-monospace " style="background-color: #0b1120;">
     
@@ -504,12 +514,20 @@
                   
           
               </div>
+<script>
 
-
-
+              function Light() {
+                const Element = document.getElementById("DarkMode");
+                Element.className = "body";
+              }
+        
+              function Dark() {
+                const Element = document.getElementById("DarkMode");
+                Element.className = "Dark";
+              }
               
 
-
+</script>
 
 
 
