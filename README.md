@@ -1,17 +1,14 @@
 
 
 # 🎥 WATHWAVE
+**URL:** <a href="https://watchwave-com.netlify.app/ "> https://watchwave-com.netlify.app/</a>
 
 ## Your streaming guide for movies, web series,TV shows & sports
 **Homepage**
 <img src="./img/home-scrin.png" /><br />
-**Cards**
-<img src="./img/card-scrin.png" />
-**Movie page**
-<img src="./img/bolly-scrin.png">
 
 
-## Use Of Project
+## About Of Project
 
 **WatchWave** is your ultimate destination for online movie watching. With a vast collection of films spanning various genres, it offers a convenient and enjoyable cinematic experience right at your fingertips. Experience seamless streaming and high-quality visuals, all while saving time and money by avoiding traditional movie theaters. Explore new releases, timeless classics, and hidden gems, and tailor your movie nights according to your preferences. Say goodbye to hassle and hello to the future of movie entertainment with WatchWave.
 
