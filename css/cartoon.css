@@ -60,3 +60,29 @@
     width:420px;
     
 }
+.modebutton{
+    height: 50px;
+    margin: 3px;
+  }
+  .modechange{
+    background-color: #404040;
+  }
+  
+  @media screen and (min-width: 600px) and (max-height: 768px)
+  {
+    .card
+    {
+
+    }
+  }
+
+  .bar
+  {
+    margin-top: 50px;
+    padding-top: 40px;
+  }
+  .footer
+  {
+    width :100vw;
+
+  }
