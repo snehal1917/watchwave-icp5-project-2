@@ -5,115 +5,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watchwave</title>
-   
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/index.css">
     <script src="https://kit.fontawesome.com/06b798522f.js" crossorigin="anonymous"></script>
 
-  
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
 
 </head>
 
 <body class="body-dark" id="body">
- <!-- Navbar Start -->
-        <nav class="navbar navbar-expand-md bg-body-tertiary bg-dark  navbar-dark fixed-top ">
-            <div class="container-fluid ">
-              <a class="navbar-brand ms-5" href="#">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary bg-dark  navbar-dark fixed-top ">
+        <div class="container-fluid ">
+            <a class="navbar-brand ms-5" href="#">
                 <img src="./../img/webseries/logo.png" width="120px" height="50px" alt="" srcset="">
-                <button class="navbar-toggler ms-5" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="ms-5">
+                <button class="navbar-toggler ms-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" class="ms-5">
                     <span class="navbar-toggler-icon "></span>
-                  </button>
-              </a>
-             
-             
-             
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                </button>
+            </a>
+
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link ms-5  text-light" aria-current="page" href="./../../index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light" href="/pages/tvshows.html">TV Shows</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Movies
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="/pages/holly.html">Hollywood</a></li>
-                      <li><a class="dropdown-item" href="/pages/bollywood/bollywood.html">Bollywood</a></li>
-                      
-                      <li><a class="dropdown-item" href="/pages/Tollywoodcinema.html">Tollywood</a></li>
-                    </ul>
-                  </li> 
-                 
-                  <li class="nav-item">
-                    <a class="nav-link text-light" href="./pages/webseries.html">Web Series</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light" href="/pages/cartoon.html">Cartoon</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light" href="/pages/news.html">News</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light" href="/pages/songs.html">Songs</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light" href="/pages/about.html">About Us</a>
-                  </li>
-                  
-                  
+                    <li class="nav-item">
+                        <a class="nav-link ms-5  text-light" aria-current="page" href="./../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="/pages/tvshows.html">TV Shows</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Movies
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/pages/holly.html">Hollywood</a></li>
+                            <li><a class="dropdown-item" href="/pages/bollywood/bollywood.html">Bollywood</a></li>
+
+                            <li><a class="dropdown-item" href="/pages/Tollywoodcinema.html">Tollywood</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./pages/webseries.html">Web Series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="/pages/cartoon.html">Cartoon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="/pages/news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="/pages/songs.html">Songs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="/pages/about.html">About Us</a>
+                    </li>
+
+
                 </ul>
                 <form class="d-flex me-2" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn text-white me-3" type="submit"><i class="bi bi-search"></i></button>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn text-white me-3" type="submit"><i class="bi bi-search"></i></button>
                 </form>
-                <button  class="  NavName ulmarleft rounded-3 mt-2 lightbtn" style="border-style: 1px #ffebe8;" onclick="light()">
-                  Dark <i class="fa-solid fa-moon fa-lg"></i>
+                <button class="  NavName ulmarleft rounded-3 mt-2 lightbtn" style="border-style: 1px #ffebe8;"
+                    onclick="light()">
+                    Dark <i class="fa-solid fa-moon fa-lg"></i>
                 </button>
                 <button class="NavName   ms-2 rounded-3 mt-2 ulmarleft2 lightbtn" onclick="dark()">
-                  Light <i class="fa-regular fa-moon fa-lg"></i>
+                    Light <i class="fa-regular fa-moon fa-lg"></i>
                 </button>
-                <button class="btn text-white me-3 desktop" type="submit"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="bi bi-person-square text-white fs-3"></i></button>
-               
-              
-              </div>
-            </div>
-          </nav>
-          <div class="offcanvas offcanvas-end  text-bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="bi bi-person-square text-white fs-3 me-2"></i></h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-             <div>
-              <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><h6 class="text-white">Sign Up</h5></button>
-             </div>
-             <hr class="text-white">
-             <div>
-              <button class="btn"><h6 class="text-white">Subscribe Now</h5></button>
-              
-             </div>
-             <hr class="text-white">
-             <div>
-              <button class="btn"><h6 class="text-white">Help & Legal</h5></button>
-             
-             </div>
-            </div>
-          </div>
-          <!-- Navbar End -->
-        
+                <button class="btn text-white me-3 desktop" type="submit" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i
+                        class="bi bi-person-square text-white fs-3"></i></button>
 
 
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Sign in
-        </button>
-     <div class="container-fluid">
+            </div>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-end  text-bg-dark" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i
+                    class="bi bi-person-square text-white fs-3 me-2"></i></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <h6 class="text-white">Sign Up</h5>
+                </button>
+            </div>
+            <hr class="text-white">
+            <div>
+                <button class="btn">
+                    <h6 class="text-white">Subscribe Now</h5>
+                </button>
+
+            </div>
+            <hr class="text-white">
+            <div>
+                <button class="btn">
+                    <h6 class="text-white">Help & Legal</h5>
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Sign in
+    </button>
+    <div class="container-fluid">
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -374,8 +389,7 @@
                 <div class="col-md-3 col-12 mt-md-5 m-md-3 my-3">
                     <div class="card bg-dark">
                         <div class="card-body">
-                            <img src="./img/indeximg/cardimg-5.jpg"
-                                    class="d-flex justify-content-center w-100">
+                            <img src="./img/indeximg/cardimg-5.jpg" class="d-flex justify-content-center w-100">
 
                             <span class="fw-bolder text-light fs-3">Asur 2</span><br>
                             <p class="text-light"> Hindi <i class="bi bi-dot"></i>Thriller<i class="bi bi-dot"></i> U/A
@@ -386,8 +400,9 @@
                                 Shubh returns for revenge and this season he takes the challenge to a whole new level.
                                 With the heroes fallen apart, will a desolate Dhananjay Rajpoot and a torn Nikhil Nair
                                 be able to stop him? ASUR Season 2 Streaming Free.</p>
-                                <a href="/pages/Asur-2.html"><button class="btn btn-outline-danger "> <i class="bi bi-play-circle"></i>
-                                watch</button></a>
+                            <a href="/pages/Asur-2.html"><button class="btn btn-outline-danger "> <i
+                                        class="bi bi-play-circle"></i>
+                                    watch</button></a>
                             <button class="btn btn-outline-primary ms-3 "><i class="bi bi-share"></i> Share</button>
                         </div>
                     </div>
@@ -396,8 +411,7 @@
                 <div class="col-md-3 col-12 mt-md-5 m-md-3 my-3">
                     <div class="card bg-dark">
                         <div class="card-body">
-                            <img src="./img/indeximg/cardimg-6.avif"
-                                    class="d-flex justify-content-center w-100">
+                            <img src="./img/indeximg/cardimg-6.avif" class="d-flex justify-content-center w-100">
 
                             <span class="fw-bolder text-light fs-3">Rafuchakkar</span><br>
                             <p class="text-light"> Hindi <i class="bi bi-dot"></i>Drama<i class="bi bi-dot"></i> U/A 13+
@@ -408,8 +422,9 @@
 
                                 A twisted story that follows a con artist who must prove his innocence in the court of
                                 law.</p>
-                                <a href="/pages/Rafuchakkar.html"><button class="btn btn-outline-danger "> <i class="bi bi-play-circle"></i>
-                                watch</button></a>
+                            <a href="/pages/Rafuchakkar.html"><button class="btn btn-outline-danger "> <i
+                                        class="bi bi-play-circle"></i>
+                                    watch</button></a>
                             <button class="btn btn-outline-primary ms-3 "><i class="bi bi-share"></i> Share</button>
                         </div>
                     </div>
@@ -443,7 +458,8 @@
                 </div>
                 <div class="col-md-5 ">
 
-                    <img src="./img/indeximg/mobile.jpg" class="ms-md-5 d-block justify-content-center h-md-100 w-75 offset-1">
+                    <img src="./img/indeximg/mobile.jpg"
+                        class="ms-md-5 d-block justify-content-center h-md-100 w-75 offset-1">
 
 
                 </div>
@@ -473,7 +489,8 @@
                                 Usui. The series is known for its humorous and often irreverent content, targeting both
                                 children and adults with its unique blend of comedy, satire, and slice-of-life elements.
                             </p>
-                            <a href=""> <button class="btn btn-outline-danger "> <i class="bi bi-play-circle"></i>
+                            <a href="/pages/shinchan.html"> <button class="btn btn-outline-danger "> <i
+                                        class="bi bi-play-circle"></i>
                                     watch</button></a>
                             <button class="btn btn-outline-primary ms-3 "><i class="bi bi-share"></i> Share</button>
                         </div>
@@ -498,8 +515,9 @@
                                 premise.
 
                             </p>
-                            <button class="btn btn-outline-danger "> <i class="bi bi-play-circle"></i>
-                                watch</button>
+                            <a href="/pages/OggyAndCockroaches.html"> <button class="btn btn-outline-danger "> <i
+                                        class="bi bi-play-circle"></i>
+                                    watch</button></a>
                             <button class="btn btn-outline-primary ms-3 "><i class="bi bi-share"></i> Share</button>
                         </div>
                     </div>
@@ -525,8 +543,9 @@
                                 everyday life.
 
                             </p>
-                            <button class="btn btn-outline-danger "> <i class="bi bi-play-circle"></i>
-                                watch</button>
+                            <a href="/pages/doraemon.html"><button class="btn btn-outline-danger "> <i
+                                        class="bi bi-play-circle"></i>
+                                    watch</button> </a>
                             <button class="btn btn-outline-primary ms-3 "><i class="bi bi-share"></i> Share</button>
                         </div>
                     </div>
@@ -1125,14 +1144,14 @@
             <div class="card-header" id="faqHeading1">
                 <h5 class="mb-0">
                     <button class="btn btn-link text-decoration-none text-light fs-2 fw-bolder" data-toggle="collapse"
-                        data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                        data-target="#faqCollapse2" aria-expanded="true" aria-controls="faqCollapse1">
                         <span class="textlight"> 2. Q: What is the best thing watchWave Platform contain?</span>
 
                     </button>
                 </h5>
             </div>
 
-            <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+            <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
                 <div class="card-body text-warning fs-5">
                     ANS: We offer you free Entertainment by Movies,Series,Sports and Social
                     Awareness by
@@ -1144,13 +1163,13 @@
             <div class="card-header" id="faqHeading1">
                 <h5 class="mb-0">
                     <button class="btn btn-link text-decoration-none text-light fs-2 fw-bolder" data-toggle="collapse"
-                        data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                        data-target="#faqCollapse3" aria-expanded="true" aria-controls="faqCollapse1">
                         <span class="textlight"> 3. Q: How can I watch?</span>
                     </button>
                 </h5>
             </div>
 
-            <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+            <div id="faqCollapse3" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
                 <div class="card-body text-warning fs-5">
                     ANS: We Provide Download option ,also user can watch live news and also
                     watch in
@@ -1161,13 +1180,13 @@
             <div class="card-header" id="faqHeading1">
                 <h5 class="mb-0">
                     <button class="btn btn-link text-decoration-none text-light fs-2 fw-bolder" data-toggle="collapse"
-                        data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                        data-target="#faqCollapse4" aria-expanded="true" aria-controls="faqCollapse1">
                         <span class="textlight"> 4. Q: Where can I Watch?</span>
                     </button>
                 </h5>
             </div>
 
-            <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+            <div id="faqCollapse4" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
                 <div class="card-body text-warning fs-5">
                     ANS: Watch anywhere, anytime. Sign in with your WatchWave account to
                     watch instantly
@@ -1183,13 +1202,13 @@
             <div class="card-header" id="faqHeading1">
                 <h5 class="mb-0">
                     <button class="btn btn-link text-decoration-none text-light fs-2 fw-bolder" data-toggle="collapse"
-                        data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
-                        <span class="textlight"> 5. Q: How do I?</span>
+                        data-target="#faqCollapse5" aria-expanded="true" aria-controls="faqCollapse1">
+                        <span class="textlight"> 5. Q: How do I cancel Account?</span>
                     </button>
                 </h5>
             </div>
 
-            <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+            <div id="faqCollapse5" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
                 <div class="card-body text-warning fs-5">
                     ANS: WatchWave is flexible. There are no annoying contracts and no
                     commitments. You
@@ -1202,13 +1221,13 @@
             <div class="card-header" id="faqHeading1">
                 <h5 class="mb-0">
                     <button class="btn btn-link text-decoration-none text-light fs-2 fw-bolder" data-toggle="collapse"
-                        data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                        data-target="#faqCollapse6" aria-expanded="true" aria-controls="faqCollapse1">
                         <span class="textlight"> 6. Q: What can I watch?</span>
                     </button>
                 </h5>
             </div>
 
-            <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+            <div id="faqCollapse6" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
                 <div class="card-body text-warning fs-5">
                     ANS: WatchWave has an extensive library of feature films,
                     documentaries, TV shows,
@@ -1220,13 +1239,13 @@
             <div class="card-header" id="faqHeading1">
                 <h5 class="mb-0">
                     <button class="btn btn-link text-decoration-none text-light fs-2 fw-bolder" data-toggle="collapse"
-                        data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                        data-target="#faqCollapse7" aria-expanded="true" aria-controls="faqCollapse1">
                         <span class="textlight"> 7. Q: Is WatchWave good for kids?</span>
                     </button>
                 </h5>
             </div>
 
-            <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+            <div id="faqCollapse7" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
                 <div class="card-body text-warning fs-5">
                     ANS: The WacthWave Kids experience is included in your membership to
                     give parents
@@ -1241,13 +1260,6 @@
 
 
 
-        <div class="justify-content-center d-flex">
-            <button class="btn  btn-warning btn-lg text-decoration-none text-light m-3" data-toggle="collapse"
-                data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1" id="ansbtn"
-                onclick="change()">
-                show Answers
-            </button>
-        </div>
     </div>
 
 
@@ -1255,55 +1267,67 @@
 
     </div> <!-- end div-->
     <!-- Footer-Start -->
-    <div class="container-fluid font-monospace p-3 bg-dark " >
-    
+    <div class="container-fluid font-monospace p-3 bg-dark ">
+
         <div class="row ">
             <div class="col-md-6">
                 <div class="row mt-1">
-                <div class="col-md-4 ms-5">
-                    <img src="./../img/webseries/logo.png" height="70px" width="120px" class="mb-3"/>
-                    
-                    <ul>
-                       <li class="text-white mt-2"><a href="http://" class="text-white text-decoration-none">Home</a></li>
-                       <li class="text-white"><a href="http://" class="text-white text-decoration-none">Tv Shows</a></li>
-                       <li class="text-white"><a href="http://" class="text-white text-decoration-none">Webseries</a></li>
-                       <li class="text-white"><a href="http://" class="text-white text-decoration-none">Movies</a></li>
-                       
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h3 class="text-white font-monospace mt-5">Support</h3>
-                    <ul>
-                        <li class="text-white" ><a href="http://" class="text-white text-decoration-none">Help Center</a></li>
-                        <li class="text-white"><a href="http://" class="text-white text-decoration-none">Terms Of Use</a></li>
-                        <li class="text-white"><a href="http://" class="text-white text-decoration-none">Privacy Policy</a></li>
-                        <li class="text-white"><a href="http://" class="text-white text-decoration-none">Content Complaints</a></li>
-                        
-                        
-                    </ul>
-                </div>
+                    <div class="col-md-4 ms-5">
+                        <img src="./../img/webseries/logo.png" height="70px" width="120px" class="mb-3" />
+
+                        <ul>
+                            <li class="text-white mt-2"><a href="http://"
+                                    class="text-white text-decoration-none">Home</a></li>
+                            <li class="text-white"><a href="http://" class="text-white text-decoration-none">Tv
+                                    Shows</a></li>
+                            <li class="text-white"><a href="http://"
+                                    class="text-white text-decoration-none">Webseries</a></li>
+                            <li class="text-white"><a href="http://" class="text-white text-decoration-none">Movies</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="text-white font-monospace mt-5">Support</h3>
+                        <ul>
+                            <li class="text-white"><a href="http://" class="text-white text-decoration-none">Help
+                                    Center</a></li>
+                            <li class="text-white"><a href="http://" class="text-white text-decoration-none">Terms Of
+                                    Use</a></li>
+                            <li class="text-white"><a href="http://" class="text-white text-decoration-none">Privacy
+                                    Policy</a></li>
+                            <li class="text-white"><a href="http://" class="text-white text-decoration-none">Content
+                                    Complaints</a></li>
+
+
+                        </ul>
+                    </div>
                 </div>
 
             </div>
             <div class="col-md-6 ">
                 <div class="row">
                     <div class="col-md-6">
-                       <h2 class="text-white mt-5 font-monospace">Connect with us</h2> 
-                       <div class="d-flex">
-                     <a href="" class="text-white text-decoration-none ms-3"><i class="bi bi-instagram fs-1 text-white me-4"></i></a>
-                     <a href="" class="text-white text-decoration-none"><i class="bi bi-facebook fs-1 text-white me-4"></i></a>
-                     <a href="" class="text-white text-decoration-none"><i class="bi bi-youtube fs-1 text-white me-4"></i></a>
-                     <a href="" class="text-white text-decoration-none"><i class="bi bi-twitter fs-1 text-white me-4"></i></a>
-                     
+                        <h2 class="text-white mt-5 font-monospace">Connect with us</h2>
+                        <div class="d-flex">
+                            <a href="" class="text-white text-decoration-none ms-3"><i
+                                    class="bi bi-instagram fs-1 text-white me-4"></i></a>
+                            <a href="" class="text-white text-decoration-none"><i
+                                    class="bi bi-facebook fs-1 text-white me-4"></i></a>
+                            <a href="" class="text-white text-decoration-none"><i
+                                    class="bi bi-youtube fs-1 text-white me-4"></i></a>
+                            <a href="" class="text-white text-decoration-none"><i
+                                    class="bi bi-twitter fs-1 text-white me-4"></i></a>
 
-                       </div>
+
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <h2 class="text-white mt-5 font-monospace">Download the App</h2> 
+                        <h2 class="text-white mt-5 font-monospace">Download the App</h2>
                         <div class="d-flex">
 
-                        <img src="./../img/webseries/gpay.png" height="50px" alt="" srcset="">
-                        <img src="./../img/webseries/appstore.png" height="50px" alt="" srcset="">
+                            <img src="./../img/webseries/gpay.png" height="50px" alt="" srcset="">
+                            <img src="./../img/webseries/appstore.png" height="50px" alt="" srcset="">
                         </div>
                     </div>
                 </div>
@@ -1312,14 +1336,14 @@
 
 
 
-            
+
 
         </div>
-        
+
 
     </div>
-    
- <!-- footer End -->
+
+    <!-- footer End -->
 </body>
 
 
@@ -1343,15 +1367,6 @@
         light.classList.remove('body-dark');
         light.classList.add('body-light');
     }
-    function change() {
-        var button = document.getElementById("ansbtn");
-        if (button.textContent === "Hide Answers") {
-            button.textContent = "show Answers";
-        } else {
-            button.textContent = "Hide Answers"
-        }
-    }
-
 
 </script>
 
@@ -1360,10 +1375,10 @@
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 
 </html>
