@@ -2,88 +2,482 @@
 <html>
     <head>
         <title>Songs Pages</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+      
+  <script src="https://kit.fontawesome.com/06b798522f.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+       
     
-        <link rel="stylesheet" href="./../css/songs.css">
+    <link rel="stylesheet" href="./../css/songs.css">
+
+    <script src="./../js/songs.js"></script>
+
     </head>
-    <body class="bg-dark">
-        <div class="ms-5 me-5">
-            <h5 class="text-light mt-5 mb-4">New Hindi Songs</h5>
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="card card-width mx-2">
-                        <img src="https://images-hmz5.hungama.com/p/https://images.hungama.com/c/1/e0b/488/104467465/104467465_180x180.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title text-light fs-6">Chaleya (From "Jawan")</h5>
-                            <p class="card-subtitle text-light text-card">Anirudh Ravichander, Arijit...</p>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="col-lg-2">
-                    <div class="card card-width mx-2">
-                        <img src="https://images-hmz5.hungama.com/p/https://images.hungama.com/c/1/e0b/488/104467465/104467465_180x180.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title text-light fs-6">Chaleya (From "Jawan")</h5>
-                            <p class="card-subtitle text-light">Anirudh Ravichander, Arijit...</p>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="col-lg-2">
-                    <div class="card card-width">
-                        <img src="https://images-hmz5.hungama.com/p/https://images.hungama.com/c/1/e0b/488/104467465/104467465_180x180.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title text-light fs-6">Chaleya (From "Jawan")</h5>
-                            <p class="card-subtitle text-light">Anirudh Ravichander, Arijit...</p>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="col-lg-2">
-                    <div class="card card-width">
-                        <img src="https://images-hmz5.hungama.com/p/https://images.hungama.com/c/1/e0b/488/104467465/104467465_180x180.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title text-light fs-6">Chaleya (From "Jawan")</h5>
-                            <p class="card-subtitle text-light">Anirudh Ravichander, Arijit...</p>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="col-lg-2">
-                    <div class="card card-width">
-                        <img src="https://images-hmz5.hungama.com/p/https://images.hungama.com/c/1/e0b/488/104467465/104467465_180x180.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title text-light fs-6">Chaleya (From "Jawan")</h5>
-                            <p class="card-subtitle text-light">Anirudh Ravichander, Arijit...</p>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="col-lg-2">
-                    <div class="card card-width">
-                        <img src="https://images-hmz5.hungama.com/p/https://images.hungama.com/c/1/e0b/488/104467465/104467465_180x180.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title text-light fs-6">Chaleya (From "Jawan")</h5>
-                            <p class="card-subtitle text-light">Anirudh Ravichander, Arijit...</p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
+    <body class="body" id="DarkMode">
+        <nav class="navbar navbar-expand-md bg-body-tertiary bg-dark  navbar-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand " href="#">
+                <img src="./../img/webseries/logo.png" width="70px" height="50px" alt="" srcset="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <button class="btn text-white me-3 mobile float-end" type="submit"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="bi bi-person-square text-white fs-3"></i></button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link ms-5  text-light" aria-current="page" href="./../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="/pages/tvshows.html">TV Shows</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Movies
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/pages/holly.html">Hollywood</a></li>
+                      <li><a class="dropdown-item" href="/pages/bollywood/bollywood.html">Bollywood</a></li>
+                      
+                      <li><a class="dropdown-item" href="/pages/Tollywoodcinema.html">Tollywood</a></li>
+                    </ul>
+                  </li> 
+                 
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="/pages/webseries.html">Web Series</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="/pages/cartoon.html">Cartoon</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="/pages/news.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="/pages/songs.html">Songs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="/pages/about.html">About Us</a>
+                  </li>
+                  
+                  
+                </ul>
+                <form class="d-flex me-2" role="search">
+                  <input class="mt-2 form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn text-white me-3 mt-2" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+                <button  class="  NavName ulmarleft rounded-3 mt-2 lightbtn" style="border-style: 1px #ffebe8;" onclick="Light()">
+                  Dark <i class="fa-solid fa-moon fa-lg"></i>
+                </button>
+                <button class="NavName   ms-2 rounded-3 mt-2 ulmarleft2 lightbtn" onclick="Dark()">
+                  Light <i class="fa-regular fa-moon fa-lg"></i>
+                </button>
+                <button class="btn text-white me-2 mt-2  desktop" type="submit"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="bi bi-person-square text-white fs-3"></i></button>
                
+              
+              </div>
+            </div>
+          </nav>
+          <div class="offcanvas offcanvas-end  text-bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="bi bi-person-square text-white fs-3 me-2"></i></h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+             <div>
+              <button class="btn"><h6 class="text-white">Sign Up</h5></button>
+             </div>
+             <hr class="text-white">
+             <div>
+              <button class="btn"><h6 class="text-white">Subscribe Now</h5></button>
+              
+             </div>
+             <hr class="text-white">
+             <div>
+              <button class="btn"><h6 class="text-white">Help & Legal</h5></button>
+             
+             </div>
+            </div>
+          </div>
+      <div class="container mt-5">
+        
+        <div class="row">
+         <h5 class=" mt-5">New Hindi Songs</h5>     
+          <div class="card bg-dark col-sm-10  col-md-5 mt-2 mq card-width">
+          
+            <img src="./../img/songs/Chaleya.webp" class="card-img-top mt-2 img-height" alt="...">
+            
+          
+        
+            <div class="card-body">
+              <h5 class="card-title text-light">Chaleya Jawan</h5>
+            </div>
+    
+            <div class="card-body">
+              <a href="#" class="card-link"><button class="btn btn-outline-danger" value="PLAY"  onclick="play('s1')"><i class="fa-regular fa-circle-play"></i>
+                  Play Now <audio id="s1" src="./../audio_mp3/Chaleya_64(PagalWorld.com.pe).mp3"></audio>
+                </button></a>
+                 
+              <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+            </div>
+          
+          </div>
+    
+          <div class="card bg-dark ms-5 col-sm-12 col-md-5 mt-2 card-width">
+            <img src="./../img/songs/Dil.webp" class="card-img-top mt-2 img-height" alt="...">
+            
+            
+
+            <div class="card-body">
+              <h5 class="card-title text-light">Dil Ka Telephone 2.0</h5>
+    
+            </div>
+    
+            <div class="card-body">
+              <a href="#" class="card-link"><button class="btn btn-outline-danger" value="PLAY"  onclick="play('s2')"><i class="fa-regular fa-circle-play"></i>
+                  Play Now  <audio id="s2" src="./../audio_mp3/Dil Ka Telephone 2 Dream Girl 2 320 Kbps.mp3" ></audio></button></a>
+              <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+            </div>
+          </div>
+          <div class="card ms-5 bg-dark col-sm-12 col-md-5 mt-2 card-width">
+            <img src="./../img/songs/yaar ka.webp" class="card-img-top mt-2 img-height" alt="...">
+           
+            <div class="card-body">
+              <h5 class="card-title text-light">Yaar Ka Sataya Hua Hai</h5>
+    
+            </div>
+    
+            <div class="card-body">
+              <a href="#" class="card-link"><button class="btn btn-outline-danger" value="PLAY"  onclick="play('s3')"><i class="fa-regular fa-circle-play"></i>
+                  Play Now  <audio id="s3" src="./../audio_mp3/Yaar Ka Sataya Hua Hai B Praak 320 Kbps.mp3" ></audio> </button></a>
+              <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+            </div>
+          </div>
+          <div class="card bg-dark ms-5 col-sm-12 mt-2 col-md-5 card-width" >
+            <img src="./../img/songs/udd jaa kaale.webp" class="card-img-top mt-2 img-height" alt="...">
+         
+            <div class="card-body">
+              <h5 class="card-title text-light">Udd Jaa Kaale Kaava</h5>    
+            </div>
+
+            <div class="card-body">
+              <a href="#" class="card-link"><button class="btn btn-outline-danger" value="PLAY"  onclick="play('s4')"><i class="fa-regular fa-circle-play"></i>
+                  Play Now  <audio id="s4" src="./../audio_mp3/Udd Jaa Kaale Kaava _ Gadar 2.mp3" ></audio> </button></a>
+              <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+            </div>   
+          </div>
+      </div>
+      <div class="row">
+        <h5 class=" mt-5">Weekly Chartbusters</h5>     
+         <div class="card bg-dark col-sm-10  col-md-5 mt-2 mq card-width">
+           <img src="./../img/songs/hiphoptop40.webp" class="card-img-top mt-2 img-height" alt="...">
+           
+           <div class="card-body">
+             <h5 class="card-title text-light">Hindi Hip Hop Top 40</h5>
+           </div>
+   
+           <div class="card-body">
+             <a href="#" class="card-link"><button class="btn btn-outline-danger" value="PLAY"  onclick="play('s5')"><i class="fa-regular fa-circle-play"></i>
+              Play Now  <audio id="s5" src="./../audio_mp3/Guli Mata_64(PagalWorld.com.pe).mp3" ></audio> </button></a>
+             <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+           </div>
+         </div>
+   
+         <div class="card bg-dark ms-5 col-sm-12 col-md-5 mt-2 card-width">
+           <img src="./../img/songs/reelstop40.webp" class="card-img-top mt-2 img-height" alt="...">
+           <div class="card-body">
+             <h5 class="card-title text-light">Reels Insta Top 40</h5>
+   
+           </div>
+   
+           <div class="card-body">
+             <a href="#" class="card-link"><button class="btn btn-outline-danger" value="PLAY"  onclick="play('s6')"><i class="fa-regular fa-circle-play"></i>
+              Play Now  <audio id="s6" src="./../audio_mp3/Genda Phool_64(PagalWorld.com.pe).mp3" ></audio> </button></a>
+             <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+           </div>
+         </div>
+         <div class="card ms-5 bg-dark col-sm-12 col-md-5 mt-2 card-width">
+           <img src="./../img/songs/dancetop40.webp" class="card-img-top mt-2 img-height" alt="...">
+           <div class="card-body">
+             <h5 class="card-title text-light">Hindi Dance Top 40</h5>
+   
+           </div>
+   
+           <div class="card-body">
+             <a href="#" class="card-link"><button class="btn btn-outline-danger" value="PLAY"  onclick="play('s7')"><i class="fa-regular fa-circle-play"></i>
+              Play Now  <audio id="s7" src="./../audio_mp3/Tere Hawaale_64(PagalWorld.com.pe).mp3" ></audio> </button></a>
+             <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+           </div>
+         </div>
+         <div class="card bg-dark ms-5 col-sm-12 mt-2 col-md-5 card-width" >
+           <img src="./../img/songs/bollywoodtop40.webp" class="card-img-top mt-2 img-height" alt="...">
+           <div class="card-body">
+             <h5 class="card-title text-light">Bollywood Top 40</h5>    
+           </div>
+
+           <div class="card-body">
+             <a href="#" class="card-link"><button class="btn btn-outline-danger" value="PLAY"  onclick="play('s8')"><i class="fa-regular fa-circle-play"></i>
+              Play Now  <audio id="s8" src="./../audio_mp3/What Jhumka Rocky Aur Rani Kii Prem Kahaani 320 Kbps.mp3" ></audio> </button></a>
+             <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+           </div> 
+       </div>
+     </div>
+
+     <div class="row">
+      <h5 class=" mt-5">Top Albums Songs</h5>     
+       <div class="card bg-dark col-sm-10  col-md-5 mt-2 mq card-width">
+         <img src="./../img/songs/gadar 2.webp" class="card-img-top mt-2 img-height" alt="...">
+         
+         <div class="card-body">
+           <h5 class="card-title text-light">Gadar 2 (Original)</h5>
+         </div>
+ 
+         <div class="card-body">
+           <a href="#" class="card-link"><button class="btn btn-outline-danger" value="PLAY"  onclick="play('s9')"><i class="fa-regular fa-circle-play"></i>
+            Play Now  <audio id="s9" src="./../audio_mp3/Udd Jaa Kaale Kaava _ Gadar 2.mp3" ></audio> </button></a>
+           <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+         </div>
+       </div>
+ 
+       <div class="card bg-dark ms-5 col-sm-12 col-md-5 mt-2 card-width">
+         <img src="./../img/songs/rocky.webp" class="card-img-top mt-2 img-height" alt="...">
+         <div class="card-body">
+           <h5 class="card-title text-light">Rocky Aur Rani Kii Prem</h5>
+ 
+         </div>
+ 
+         <div class="card-body">
+           <a href="#" class="card-link"><button class="btn btn-outline-danger" value="PLAY"  onclick="play('s10')"><i class="fa-regular fa-circle-play"></i>
+            Play Now  <audio id="s10" src="./../audio_mp3/Tum Kya Mile Rocky Aur Rani Kii Prem Kahaani 320 Kbps.mp3" ></audio> </button></a>
+           <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+         </div>
+       </div>
+       <div class="card ms-5 bg-dark col-sm-12 col-md-5 mt-2 card-width">
+         <img src="./../img/songs/bawaal.webp" class="card-img-top mt-2 img-height" alt="...">
+         <div class="card-body">
+           <h5 class="card-title text-light">Bawaal</h5>
+ 
+         </div>
+ 
+         <div class="card-body">
+           <a href="#" class="card-link"><button class="btn btn-outline-danger" value="PLAY"  onclick="play('s11')"><i class="fa-regular fa-circle-play"></i>
+            Play Now  <audio id="s11" src="./../audio_mp3/Kat Jayega_320(PagalWorld.com.pe).mp3" ></audio> </button></a>
+           <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+         </div>
+       </div>
+       <div class="card bg-dark ms-5 col-sm-12 mt-2 col-md-5 card-width" >
+         <img src="./../img/songs/zara.webp" class="card-img-top mt-2 img-height" alt="...">
+         <div class="card-body">
+           <h5 class="card-title text-light">Zara Hatke Zara Bachke</h5>    
+         </div>
+
+         <div class="card-body">
+           <a href="#" class="card-link"><button class="btn btn-outline-danger" value="PLAY"  onclick="play('s12')"><i class="fa-regular fa-circle-play"></i>
+            Play Now  <audio id="s12" src="./../audio_mp3/Phir Aur Kya Chahiye(Asees Version)_192(PagalWorld.com.pe).mp3" ></audio> </button></a>
+           <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+         </div>
+ 
+        
+     </div>
+   </div>
+
+   <div class="row">
+    <h5 class=" mt-5">New Hindi Songs</h5>     
+     <div class="card bg-dark col-sm-10  col-md-5 mt-2 mq card-width">
+       <img src="./../img/songs/Chaleya.webp" class="card-img-top mt-2 img-height" alt="...">
+       
+       <div class="card-body">
+         <h5 class="card-title text-light">Chaleya Jawan</h5>
+       </div>
+
+       <div class="card-body">
+         <a href="#" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
+             Play Now</button></a>
+         <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+       </div>
+     </div>
+
+     <div class="card bg-dark ms-5 col-sm-12 col-md-5 mt-2 card-width">
+       <img src="./../img/songs/Dil.webp" class="card-img-top mt-2 img-height" alt="...">
+       <div class="card-body">
+         <h5 class="card-title text-light">Dil Ka Telephone 2.0</h5>
+
+       </div>
+
+       <div class="card-body">
+         <a href="#" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
+             Play Now</button></a>
+         <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+       </div>
+     </div>
+     <div class="card ms-5 bg-dark col-sm-12 col-md-5 mt-2 card-width">
+       <img src="./../img/songs/yaar ka.webp" class="card-img-top mt-2 img-height" alt="...">
+       <div class="card-body">
+         <h5 class="card-title text-light">Yaar Ka Sataya Hua Hai</h5>
+
+       </div>
+
+       <div class="card-body">
+         <a href="#" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
+             Play Now</button></a>
+         <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+       </div>
+     </div>
+     <div class="card bg-dark ms-5 col-sm-12 mt-2 col-md-5 card-width" >
+       <img src="./../img/songs/udd jaa kaale.webp" class="card-img-top mt-2 img-height" alt="...">
+       <div class="card-body">
+         <h5 class="card-title text-light">Udd Jaa Kaale Kaava</h5>    
+       </div>
+
+       <div class="card-body">
+         <a href="#" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
+             Play Now</button></a>
+         <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+       </div>
+
+      
+   </div>
+ </div>
+
+ <div class="row">
+  <h5 class=" mt-5">New Hindi Songs</h5>     
+   <div class="card bg-dark col-sm-10  col-md-5 mt-2 mq card-width">
+     <img src="./../img/songs/Chaleya.webp" class="card-img-top mt-2 img-height" alt="...">
+     
+     <div class="card-body">
+       <h5 class="card-title text-light">Chaleya Jawan</h5>
+     </div>
+
+     <div class="card-body">
+       <a href="#" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
+           Play Now</button></a>
+       <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+     </div>
+   </div>
+
+   <div class="card bg-dark ms-5 col-sm-12 col-md-5 mt-2 card-width">
+     <img src="./../img/songs/Dil.webp" class="card-img-top mt-2 img-height" alt="...">
+     <div class="card-body">
+       <h5 class="card-title text-light">Dil Ka Telephone 2.0</h5>
+
+     </div>
+
+     <div class="card-body">
+       <a href="#" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
+           Play Now</button></a>
+       <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+     </div>
+   </div>
+   <div class="card ms-5 bg-dark col-sm-12 col-md-5 mt-2 card-width">
+     <img src="./../img/songs/yaar ka.webp" class="card-img-top mt-2 img-height" alt="...">
+     <div class="card-body">
+       <h5 class="card-title text-light">Yaar Ka Sataya Hua Hai</h5>
+
+     </div>
+
+     <div class="card-body">
+       <a href="#" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
+           Play Now</button></a>
+       <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+     </div>
+   </div>
+   <div class="card bg-dark ms-5 col-sm-12 mt-2 col-md-5 card-width" >
+     <img src="./../img/songs/udd jaa kaale.webp" class="card-img-top mt-2 img-height" alt="...">
+     <div class="card-body">
+       <h5 class="card-title text-light">Udd Jaa Kaale Kaava</h5>    
+     </div>
+
+     <div class="card-body">
+       <a href="#" class="card-link"><button class="btn btn-outline-danger"><i class="fa-regular fa-circle-play"></i>
+           Play Now</button></a>
+       <a href="#" class="card-link"><button class="btn btn-outline-primary">Share</button></a>
+     </div>
+
+    
+ </div>
+</div>
+
+      </div>  <div class=" mt-5 font-monospace " style="background-color: #0b1120;">
+    
+        <div class="row ">
+            <div class="col-md-6">
+                <div class="row mt-1">
+                <div class="col-md-4 ms-5">
+                    <img src="./../img/webseries/logo.png" height="70px" width="120px"/>
+                    <h3 class="text-warning fs-4 mt-2">Watch Wave</h3>
+                    <ul>
+                       <li class="text-white mt-2"><a href="http://" class="text-white text-decoration-none">Home</a></li>
+                       <li class="text-white"><a href="http://" class="text-white text-decoration-none">Tv Shows</a></li>
+                       <li class="text-white"><a href="http://" class="text-white text-decoration-none">Webseries</a></li>
+                       <li class="text-white"><a href="http://" class="text-white text-decoration-none">Movies</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="text-white font-monospace mt-5">Support</h3>
+                    <ul>
+                        <li class="text-white" ><a href="http://" class="text-white text-decoration-none">Help Center</a></li>
+                        <li class="text-white"><a href="http://" class="text-white text-decoration-none">Terms Of Use</a></li>
+                        <li class="text-white"><a href="http://" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="text-white"><a href="http://" class="text-white text-decoration-none">Content Complaints</a></li>
+                        
+                        
+                    </ul>
+                </div>
+                </div>
 
             </div>
-        </div>
+            <div class="col-md-6 ">
+                <div class="row">
+                    <div class="col-md-6">
+                       <h2 class="text-white mt-5 font-monospace">Connect with us</h2> 
+                       <div class="d-flex">
+                     <a href="" class="text-white text-decoration-none ms-3"><i class="bi bi-instagram fs-1 text-white me-4"></i></a>
+                     <a href="" class="text-white text-decoration-none"><i class="bi bi-facebook fs-1 text-white me-4"></i></a>
+                     <a href="" class="text-white text-decoration-none"><i class="bi bi-youtube fs-1 text-white me-4"></i></a>
+                     <a href="" class="text-white text-decoration-none"><i class="bi bi-twitter fs-1 text-white me-4"></i></a>
+                     
 
+                       </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="text-white mt-5 font-monospace">Download the App</h2> 
+                        <div class="d-flex">
+
+                        <img src="./../img/webseries/gpay.png" height="50px" alt="" srcset="">
+                        <img src="./../img/webseries/appstore.png" height="50px" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            
+
+        </div>
+        
+
+    </div>
+
+
+
+    </div>
+
+    <script>
+         function Light() {
+        const Element = document.getElementById("DarkMode");
+        Element.className = "body";
+      }
+
+      function Dark() {
+        const Element = document.getElementById("DarkMode");
+        Element.className = "Dark";
+      }
+    </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
         </script>

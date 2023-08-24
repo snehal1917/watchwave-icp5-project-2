@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/06b798522f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>About Bhola movie</title>
+
+<style>
+    .content
+    {
+        margin-top: 15%;
+
+    }
+    .btn:hover
+    {
+        transform: scale(1.1);
+        transition: 1s;
+    }
+    .link
+    {
+        text-decoration: none;
+    }
+    .link:hover{
+        text-decoration: underline ;
+        font-size: small;
+    }
+
+
+</style>
+</head>
+<body>
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-md bg-body-tertiary bg-dark navbar-dark fixed-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-5" href="#">
+        <img src="./../img/webseries/logo.png" width="120px" height="50px" alt="" srcset="">
+        <button class="navbar-toggler ms-5" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="ms-5">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+      </a>
+     
+     
+     
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link ms-5  text-light" aria-current="page" href="./../../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/pages/tvshows.html">TV Shows</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Movies
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/pages/holly.html">Hollywood</a></li>
+              <li><a class="dropdown-item" href="/pages/bollywood/bollywood.html">Bollywood</a></li>
+              
+              <li><a class="dropdown-item" href="/pages/Tollywoodcinema.html">Tollywood</a></li>
+            </ul>
+          </li> 
+         
+          <li class="nav-item">
+            <a class="nav-link " href="./pages/webseries.html">Web Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/pages/cartoon.html">Cartoon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/pages/news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/pages/songs.html">Songs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/pages/about.html">About Us</a>
+          </li>
+          
+          
+        </ul>
+        <form class="d-flex me-2" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn text-white me-3" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+        <button  class="  NavName ulmarleft rounded-3 mt-2 lightbtn" style="border-style: 1px #ffebe8;" onclick="light()">
+          Dark <i class="fa-solid fa-moon fa-lg"></i>
+        </button>
+        <button class="NavName   ms-2 rounded-3 mt-2 ulmarleft2 lightbtn" onclick="dark()">
+          Light <i class="fa-regular fa-moon fa-lg"></i>
+        </button>
+        <button class="btn text-white me-3 desktop" type="submit"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="bi bi-person-square text-white fs-3"></i></button>
+       
+      
+      </div>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-end  text-bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="bi bi-person-square text-white fs-3 me-2"></i></h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+     <div>
+      <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><h6 class="text-white">Sign Up</h5></button>
+     </div>
+     <hr class="text-white">
+     <div>
+      <button class="btn"><h6 class="text-white">Subscribe Now</h5></button>
+      
+     </div>
+     <hr class="text-white">
+     <div>
+      <button class="btn"><h6 class="text-white">Help & Legal</h5></button>
+     
+     </div>
+    </div>
+  </div>
+  <!-- Navbar End -->
+
+
+
+    <!--start-->
+        <div class="card">
+            <img src="./../img/homecardsinner/shinchan.jpg" class="card-img "/>
+            <div class="card-img-overlay ">
+                <div class="card-body text-light  ps-4 content ">
+                    <p class="d-flex  fs-1 fw-bold"> Shinchan </p>
+                    <p class="fs-6 fw-medium ">
+                        Shinnosuke Nohara (野原しんのすけ), also known as Shinchan or just Shin, <br>
+                        is the titular main protagonist of Crayon Shin-chan. He is the son of Hiroshi<br>
+                         and Misae. His nickname is "Shin-chan" and he is Himawari's brother. A <br>
+                         kindergarten-aged boy whose antics are the basis for the series.<br>
+                    </p>
+                    <p class="text-white-50 fw-normal fs-5 ">IMDB 6.0  _  2 h 22 min  _  2023</p>
+                  <p class="text-warning fw-medium"><i class="bi bi-check2-circle"></i>
+                    Watch with a watchwave website</p>
+                    <div class="d-flex mb-2">
+                    <button class="btn btn-light text-dark fw-medium p-0 ps-1 pe-1 fs-6 me-2 ps-2 pe-2  btn">Watch with prime start<br>
+                         your 30 days trial</button>
+                         <button class="text-light fw-bold btn btn-secondary btn-sm me-2 ps-2 pe-2 btn">Rent<br>UHD Rs99/-</button>
+                         <button class="text-light fw-bold fs-6 btn btn-secondary btn-sm  me-3 ps-2 pe-2 btn">More purchase<br>options</button>
+                         <button class="rounded-circle ps-1 pe-1 me-2 "><i class="bi bi-play-btn btn"></i></button>
+                         <button class="rounded-circle ps-1 pe-1  me-2 "><i class="bi bi-share btn"></i></button>
+                        </div>
+                        <p class="text-light fs-6 fw-medium">Rentals include 30 days to start watching this video and 48 hours to finish once started.</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                    <a href="CartoonRelated.html" class="link  text-light fs-5 fw-bold mt-5 me-2 ps-5  justify-content-center"><button class="btn btn-outline-warning fw-medium" >Related</button></a>
+                    <a href="Details.html" class="link text-light fs-5 fw-bold mt-5 ms-2 justify-content-center"><button class="btn btn-outline-warning fw-medium">Details</button></a>
+                     </div>
+                    </div>
+        </div>
+    <!--end-->
+
+    <div class="container-fluid font-monospace bg-dark p-3" >
+    
+        <div class="row ">
+            <div class="col-md-6">
+                <div class="row mt-1">
+                <div class="col-md-4 ms-5">
+                    <img src="./../img/webseries/logo.png" height="70px" width="120px" class="mb-3"/>
+            
+                    <ul>
+                       <li class="text-white mt-2"><a href="http://" class="text-white text-decoration-none">Home</a></li>
+                       <li class="text-white"><a href="http://" class="text-white text-decoration-none">Tv Shows</a></li>
+                       <li class="text-white"><a href="http://" class="text-white text-decoration-none">Webseries</a></li>
+                       <li class="text-white"><a href="http://" class="text-white text-decoration-none">Movies</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="text-white font-monospace mt-5">Support</h3>
+                    <ul>
+                        <li class="text-white" ><a href="http://" class="text-white text-decoration-none">Help Center</a></li>
+                        <li class="text-white"><a href="http://" class="text-white text-decoration-none">Terms Of Use</a></li>
+                        <li class="text-white"><a href="http://" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="text-white"><a href="http://" class="text-white text-decoration-none">Content Complaints</a></li>
+                        
+                        
+                    </ul>
+                </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 ">
+                <div class="row">
+                    <div class="col-md-6">
+                       <h2 class="text-white mt-5 font-monospace">Connect with us</h2> 
+                       <div class="d-flex">
+                     <a href="" class="text-white text-decoration-none ms-3"><i class="bi bi-instagram fs-1 text-white me-4"></i></a>
+                     <a href="" class="text-white text-decoration-none"><i class="bi bi-facebook fs-1 text-white me-4"></i></a>
+                     <a href="" class="text-white text-decoration-none"><i class="bi bi-youtube fs-1 text-white me-4"></i></a>
+                     <a href="" class="text-white text-decoration-none"><i class="bi bi-twitter fs-1 text-white me-4"></i></a>
+                     
+
+                       </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="text-white mt-5 font-monospace">Download the App</h2> 
+                        <div class="d-flex">
+
+                        <img src="./../img/webseries/gpay.png" height="50px" alt="" srcset="">
+                        <img src="./../img/webseries/appstore.png" height="50px" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            
+
+        </div>
+        
+
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="row">
+
+        </div>
+    </div>
+ 
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</html>
